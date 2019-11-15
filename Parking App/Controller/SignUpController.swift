@@ -1,5 +1,5 @@
 //
-//  SignInController.swift
+//  SignUpController.swift
 //  Parking App
 //
 //  Created by Zakim Javer on 2019-11-15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignInController: UIViewController {
+class SignUpController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
