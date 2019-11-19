@@ -10,6 +10,10 @@ import UIKit
 
 class SignInController: UIViewController {
 
+
+    @IBAction func SignUp(_ sender: UIButton) {
+        openScene()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +30,13 @@ class SignInController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func openScene(){
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let signUp = mainSB.instantiateViewController(withIdentifier: "SignUp") as! SignUpController
+        //receiptVC.billAmount = self.billAmount
+        //        self.present(receiptVC, animated: true, completion: nil)
+        navigationController?.pushViewController(signUp, animated: true)
+    }
 
 }

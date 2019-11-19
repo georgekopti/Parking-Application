@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -10,7 +10,7 @@
         <!--Sign In Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInController" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignIn" id="BYZ-38-t0r" customClass="SignInController" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK6-kH-msj">
                                 <rect key="frame" x="340" y="269.5" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="SignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByM-FQ-L65"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -87,7 +90,7 @@
         <!--Sign Up Controller-->
         <scene sceneID="CLR-14-VDX">
             <objects>
-                <viewController id="pbE-Bz-Xkn" customClass="SignUpController" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" id="pbE-Bz-Xkn" customClass="SignUpController" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uap-9K-eDO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
