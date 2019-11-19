@@ -51,9 +51,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK6-kH-msj">
                                 <rect key="frame" x="340" y="269.5" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <action selector="SignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByM-FQ-L65"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
