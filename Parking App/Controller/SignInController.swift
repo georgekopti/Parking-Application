@@ -12,8 +12,14 @@ class SignInController: UIViewController {
 
 
     @IBAction func SignUp(_ sender: UIButton) {
-        openScene()
+        print("here")
+        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let signUp = mainSB.instantiateViewController(withIdentifier: "SignUp") as! SignUp
+        //receiptVC.billAmount = self.billAmount
+        self.present(signUp, animated: true, completion: nil)
+        navigationController?.pushViewController(signUp, animated: true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,11 +38,7 @@ class SignInController: UIViewController {
     */
     
     func openScene(){
-        let mainSB : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let signUp = mainSB.instantiateViewController(withIdentifier: "SignUp") as! SignUpController
-        //receiptVC.billAmount = self.billAmount
-        //        self.present(receiptVC, animated: true, completion: nil)
-        navigationController?.pushViewController(signUp, animated: true)
+        
     }
 
 }
