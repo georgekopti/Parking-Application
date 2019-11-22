@@ -94,6 +94,45 @@
             </objects>
             <point key="canvasLocation" x="2654" y="90"/>
         </scene>
+        <!--SearchVC-->
+        <scene sceneID="F1r-9e-bcg">
+            <objects>
+                <viewController storyboardIdentifier="Search" id="lRg-B8-IOo" customClass="SearchVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgL-A5-uw8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwy-lD-Y1F">
+                                <rect key="frame" x="20" y="812" width="374" height="30"/>
+                                <state key="normal" title="Search Nearby Parking Facilities"/>
+                                <connections>
+                                    <action selector="onSearchNearby" destination="lRg-B8-IOo" eventType="touchUpInside" id="rwB-Gf-Cla"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="h3d-Jd-3a0">
+                                <rect key="frame" x="0.0" y="64" width="414" height="728"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mJp-gZ-yZ0" firstAttribute="bottom" secondItem="lwy-lD-Y1F" secondAttribute="bottom" constant="20" id="7NL-eZ-hEZ"/>
+                            <constraint firstItem="mJp-gZ-yZ0" firstAttribute="trailing" secondItem="lwy-lD-Y1F" secondAttribute="trailing" constant="20" id="CfA-2k-clQ"/>
+                            <constraint firstItem="h3d-Jd-3a0" firstAttribute="leading" secondItem="mJp-gZ-yZ0" secondAttribute="leading" id="Vrs-Ba-lUp"/>
+                            <constraint firstItem="h3d-Jd-3a0" firstAttribute="top" secondItem="mJp-gZ-yZ0" secondAttribute="top" constant="20" id="Z8C-8S-xxr"/>
+                            <constraint firstItem="lwy-lD-Y1F" firstAttribute="leading" secondItem="mJp-gZ-yZ0" secondAttribute="leading" constant="20" id="cHs-UL-H63"/>
+                            <constraint firstItem="lwy-lD-Y1F" firstAttribute="top" secondItem="h3d-Jd-3a0" secondAttribute="bottom" constant="20" id="kHP-8f-1dw"/>
+                            <constraint firstItem="mJp-gZ-yZ0" firstAttribute="trailing" secondItem="h3d-Jd-3a0" secondAttribute="trailing" id="z8c-Bc-62c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mJp-gZ-yZ0"/>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="h3d-Jd-3a0" id="w5P-uR-F7i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWu-zJ-ud1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2672" y="1586"/>
+        </scene>
         <!--MenuVC-->
         <scene sceneID="Eba-1R-aGi">
             <objects>
@@ -121,6 +160,9 @@
                                 <rect key="frame" x="20" y="258" width="374" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Search Nerby Parking Facilities"/>
+                                <connections>
+                                    <action selector="onSearchClick" destination="7iC-e1-DkT" eventType="touchUpInside" id="60e-ie-6dR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQM-Np-QL4">
                                 <rect key="frame" x="20" y="316" width="374" height="38"/>

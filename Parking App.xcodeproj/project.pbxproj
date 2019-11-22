@@ -16,6 +16,7 @@
 		AE1DEB8623787CE800D49000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8523787CE800D49000 /* Assets.xcassets */; };
 		AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */; };
 		AE47524123885D8F00DB287C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47524023885D8F00DB287C /* MenuVC.swift */; };
+		AE475243238862A000DB287C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE475242238862A000DB287C /* SearchVC.swift */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
 		F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDC2388438600911436 /* DataBaseHelper.swift */; };
@@ -34,6 +35,7 @@
 		AE1DEB8823787CE800D49000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1DEB8A23787CE800D49000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE47524023885D8F00DB287C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		AE475242238862A000DB287C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		F5EF4CDC2388438600911436 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				AE01CA7B237F54010024D025 /* SignUpVC.swift */,
 				F5EF4CD823848B5A00911436 /* SignInVC.swift */,
 				AE47524023885D8F00DB287C /* MenuVC.swift */,
+				AE475242238862A000DB287C /* SearchVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE01CA7C237F54010024D025 /* SignUpVC.swift in Sources */,
+				AE475243238862A000DB287C /* SearchVC.swift in Sources */,
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
 				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
