@@ -15,6 +15,12 @@
 		AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE1DEB8223787CE600D49000 /* Parking_App.xcdatamodeld */; };
 		AE1DEB8623787CE800D49000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8523787CE800D49000 /* Assets.xcassets */; };
 		AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */; };
+		BFD8BB0923877AA300CAFFE9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BB0823877AA300CAFFE9 /* User.swift */; };
+		BFD8BB0B23877D5F00CAFFE9 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BB0A23877D5F00CAFFE9 /* Payment.swift */; };
+		BFD8BB0D23877EC600CAFFE9 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BB0C23877EC600CAFFE9 /* Parking.swift */; };
+		BFD8BB0F2387828D00CAFFE9 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BB0E2387828D00CAFFE9 /* UserController.swift */; };
+		BFD8BB11238783E800CAFFE9 /* PaymentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BB10238783E800CAFFE9 /* PaymentController.swift */; };
+		BFD8BB13238790F500CAFFE9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD8BB12238790F500CAFFE9 /* StringExtension.swift */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		AE1DEB8523787CE800D49000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1DEB8823787CE800D49000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1DEB8A23787CE800D49000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD8BB0823877AA300CAFFE9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
+		BFD8BB0A23877D5F00CAFFE9 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = SOURCE_ROOT; };
+		BFD8BB0C23877EC600CAFFE9 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = SOURCE_ROOT; };
+		BFD8BB0E2387828D00CAFFE9 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		BFD8BB10238783E800CAFFE9 /* PaymentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentController.swift; sourceTree = "<group>"; };
+		BFD8BB12238790F500CAFFE9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +85,7 @@
 				AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */,
 				AE1DEB8A23787CE800D49000 /* Info.plist */,
 				AE1DEB8223787CE600D49000 /* Parking_App.xcdatamodeld */,
+				BFD8BB12238790F500CAFFE9 /* StringExtension.swift */,
 			);
 			path = "Parking App";
 			sourceTree = "<group>";
@@ -80,6 +93,9 @@
 		F5A9D08E237F3A94002B20F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFD8BB0823877AA300CAFFE9 /* User.swift */,
+				BFD8BB0A23877D5F00CAFFE9 /* Payment.swift */,
+				BFD8BB0C23877EC600CAFFE9 /* Parking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +112,8 @@
 		F5A9D090237F3AB5002B20F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BFD8BB0E2387828D00CAFFE9 /* UserController.swift */,
+				BFD8BB10238783E800CAFFE9 /* PaymentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,10 +191,16 @@
 			files = (
 				AE01CA7C237F54010024D025 /* SignUpVC.swift in Sources */,
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
+				BFD8BB0F2387828D00CAFFE9 /* UserController.swift in Sources */,
 				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
+				BFD8BB0D23877EC600CAFFE9 /* Parking.swift in Sources */,
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
+				BFD8BB11238783E800CAFFE9 /* PaymentController.swift in Sources */,
+				BFD8BB13238790F500CAFFE9 /* StringExtension.swift in Sources */,
 				AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */,
+				BFD8BB0B23877D5F00CAFFE9 /* Payment.swift in Sources */,
+				BFD8BB0923877AA300CAFFE9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

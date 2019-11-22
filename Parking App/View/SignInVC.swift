@@ -10,13 +10,29 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var btnSignIn: UIButton!
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var btnSignUp: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func signup(){
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let signupVC = storyBoard.instantiateViewController(withIdentifier: "SignUpScene") as! SignUpVC
+        navigationController?.pushViewController(signupVC, animated: true)
+        
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

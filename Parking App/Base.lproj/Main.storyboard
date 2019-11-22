@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pbE-Bz-Xkn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -46,11 +46,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQW-ol-zqm">
                                 <rect key="frame" x="20" y="796" width="374" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Veu-Q1-Vak"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK6-kH-msj">
                                 <rect key="frame" x="340" y="269.5" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBp-pV-TsS"/>
+                                    <action selector="signup" destination="BYZ-38-t0r" eventType="touchUpInside" id="46m-lf-Wzs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -79,6 +86,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="4A0-ga-iB7"/>
+                    <connections>
+                        <outlet property="btnSignIn" destination="JQW-ol-zqm" id="c4C-43-lsv"/>
+                        <outlet property="btnSignUp" destination="PK6-kH-msj" id="T7I-4H-EnZ"/>
+                        <outlet property="txtEmail" destination="EdB-sA-JQe" id="l8l-cu-6Qg"/>
+                        <outlet property="txtPassword" destination="7hn-To-v8h" id="zMd-FJ-11L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +100,7 @@
         <!--Sign UpVC-->
         <scene sceneID="CLR-14-VDX">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="pbE-Bz-Xkn" customClass="SignUpVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpScene" id="pbE-Bz-Xkn" customClass="SignUpVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uap-9K-eDO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -210,9 +223,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q95-ip-gx0">
-                                <rect key="frame" x="20" y="613.5" width="374" height="46"/>
+                                <rect key="frame" x="20" y="796" width="374" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUp:" destination="pbE-Bz-Xkn" eventType="touchUpInside" id="swI-3T-3sN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -256,6 +272,7 @@
                             <constraint firstItem="M4W-T9-Nwh" firstAttribute="centerY" secondItem="0jd-j6-YXA" secondAttribute="centerY" id="X2V-BH-7Gr"/>
                             <constraint firstItem="23g-gF-v42" firstAttribute="leading" secondItem="bqN-aV-RsY" secondAttribute="trailing" constant="10" id="XaY-sx-6gs"/>
                             <constraint firstItem="vRe-k7-Qki" firstAttribute="centerY" secondItem="QRh-IH-6qA" secondAttribute="centerY" id="XcL-zc-gav"/>
+                            <constraint firstItem="rFW-mD-jTf" firstAttribute="bottom" secondItem="q95-ip-gx0" secondAttribute="bottom" constant="20" id="Z2T-Qp-R1e"/>
                             <constraint firstItem="23g-gF-v42" firstAttribute="top" secondItem="Lcn-BJ-yU7" secondAttribute="bottom" constant="20" id="ZKO-OE-VfE"/>
                             <constraint firstItem="0jd-j6-YXA" firstAttribute="centerY" secondItem="j0A-bo-rVX" secondAttribute="centerY" id="bNC-Bo-dc5"/>
                             <constraint firstItem="vRe-k7-Qki" firstAttribute="leading" secondItem="QRh-IH-6qA" secondAttribute="trailing" constant="10" id="eWe-8r-eON"/>
@@ -274,7 +291,6 @@
                             <constraint firstItem="Ofh-5a-20X" firstAttribute="top" secondItem="j0A-bo-rVX" secondAttribute="bottom" constant="20" id="sMb-h4-GSm"/>
                             <constraint firstItem="QRh-IH-6qA" firstAttribute="top" secondItem="SpD-Jn-wUu" secondAttribute="bottom" constant="20" id="syA-Ll-Jg4"/>
                             <constraint firstItem="sI5-Oq-sPG" firstAttribute="centerY" secondItem="Lcn-BJ-yU7" secondAttribute="centerY" id="tWk-IA-dQe"/>
-                            <constraint firstItem="q95-ip-gx0" firstAttribute="top" secondItem="Ofh-5a-20X" secondAttribute="bottom" constant="30" id="vbZ-fE-pCD"/>
                             <constraint firstItem="COQ-jh-5Y7" firstAttribute="top" secondItem="23g-gF-v42" secondAttribute="bottom" constant="20" id="vf8-cH-bzp"/>
                             <constraint firstItem="8DO-5a-sUY" firstAttribute="leading" secondItem="rFW-mD-jTf" secondAttribute="leading" constant="20" id="w5d-8C-za0"/>
                             <constraint firstItem="pf3-cy-si9" firstAttribute="leading" secondItem="ajD-L5-qKe" secondAttribute="trailing" constant="10" id="wKX-ST-yhO"/>
@@ -284,6 +300,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rFW-mD-jTf"/>
                     </view>
+                    <connections>
+                        <outlet property="btnSignUp" destination="q95-ip-gx0" id="Jrt-M0-ZER"/>
+                        <outlet property="plateNumber" destination="23g-gF-v42" id="U1J-fN-fWd"/>
+                        <outlet property="txtCardCVV" destination="ged-U0-2JQ" id="JUB-0Z-Ssn"/>
+                        <outlet property="txtCardCvv" destination="ged-U0-2JQ" id="Ed2-tS-BmU"/>
+                        <outlet property="txtCardExpireDate" destination="j0A-bo-rVX" id="hke-DA-vTu"/>
+                        <outlet property="txtCardHolderName" destination="Ofh-5a-20X" id="BrQ-Ma-RL8"/>
+                        <outlet property="txtCardNumber" destination="npe-Qu-rYA" id="42p-DY-Qb0"/>
+                        <outlet property="txtEmail" destination="vRe-k7-Qki" id="aqS-zN-nh2"/>
+                        <outlet property="txtName" destination="KIc-je-GqV" id="Utz-KL-V8w"/>
+                        <outlet property="txtPassword" destination="pf3-cy-si9" id="Pmr-cN-0vm"/>
+                        <outlet property="txtPhoneNumber" destination="sI5-Oq-sPG" id="uV1-ln-Rin"/>
+                        <outlet property="txtPlateNumber" destination="23g-gF-v42" id="WWq-xz-Iua"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sle-9C-zUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,9 +365,19 @@
                                 <state key="normal" title="Update User Profile"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47J-VV-KKv">
-                                <rect key="frame" x="280" y="496" width="46" height="30"/>
+                                <rect key="frame" x="251" y="496" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Parking Manual"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afo-BU-sta">
+                                <rect key="frame" x="127" y="652" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Support"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8S-sb-x5u">
+                                <rect key="frame" x="227" y="712" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SignOut"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -359,7 +399,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WsG-Gb-VQa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rfr-T2-unv" sceneMemberID="viewController">
+                <navigationController id="rfr-T2-unv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PyU-8J-PXn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
