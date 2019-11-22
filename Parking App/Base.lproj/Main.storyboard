@@ -94,6 +94,89 @@
             </objects>
             <point key="canvasLocation" x="2654" y="90"/>
         </scene>
+        <!--MenuVC-->
+        <scene sceneID="Eba-1R-aGi">
+            <objects>
+                <viewController storyboardIdentifier="Menu" id="7iC-e1-DkT" customClass="MenuVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lJC-QL-Cqz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3A-ir-drN">
+                                <rect key="frame" x="20" y="84" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Add Parking"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u7-Rs-Q42">
+                                <rect key="frame" x="20" y="142" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="View Parking Receipt"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prf-lH-p4M">
+                                <rect key="frame" x="20" y="200" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="View Parking Receipt List"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ7-PB-8cS">
+                                <rect key="frame" x="20" y="258" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Search Nerby Parking Facilities"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQM-Np-QL4">
+                                <rect key="frame" x="20" y="316" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Updata User Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-wQ-gkS">
+                                <rect key="frame" x="20" y="374" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Parking App Manual"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgA-JV-wKl">
+                                <rect key="frame" x="20" y="432" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Consumer Support"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zj-aj-E1e">
+                                <rect key="frame" x="20" y="490" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Sign Out"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4zj-aj-E1e" firstAttribute="top" secondItem="EgA-JV-wKl" secondAttribute="bottom" constant="20" id="3I8-uO-CEa"/>
+                            <constraint firstItem="8u7-Rs-Q42" firstAttribute="top" secondItem="W3A-ir-drN" secondAttribute="bottom" constant="20" id="781-dG-Ao9"/>
+                            <constraint firstItem="EgA-JV-wKl" firstAttribute="top" secondItem="Utb-wQ-gkS" secondAttribute="bottom" constant="20" id="9pK-wg-J9V"/>
+                            <constraint firstItem="4zj-aj-E1e" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="CfY-dt-xsW"/>
+                            <constraint firstItem="prf-lH-p4M" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="EiN-oL-xeb"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="prf-lH-p4M" secondAttribute="trailing" constant="20" id="Er7-AL-XIj"/>
+                            <constraint firstItem="Utb-wQ-gkS" firstAttribute="top" secondItem="OQM-Np-QL4" secondAttribute="bottom" constant="20" id="FkT-xd-04y"/>
+                            <constraint firstItem="OQM-Np-QL4" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="GYK-q3-IFH"/>
+                            <constraint firstItem="Utb-wQ-gkS" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="KDT-ek-Beb"/>
+                            <constraint firstItem="OQM-Np-QL4" firstAttribute="top" secondItem="dQ7-PB-8cS" secondAttribute="bottom" constant="20" id="KdP-M4-4yT"/>
+                            <constraint firstItem="prf-lH-p4M" firstAttribute="top" secondItem="8u7-Rs-Q42" secondAttribute="bottom" constant="20" id="LLf-n0-8a2"/>
+                            <constraint firstItem="dQ7-PB-8cS" firstAttribute="top" secondItem="prf-lH-p4M" secondAttribute="bottom" constant="20" id="S9M-OH-IDi"/>
+                            <constraint firstItem="EgA-JV-wKl" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="W8S-eD-lhj"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="EgA-JV-wKl" secondAttribute="trailing" constant="20" id="Xos-4W-P21"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="8u7-Rs-Q42" secondAttribute="trailing" constant="20" id="fnE-qI-wAA"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="dQ7-PB-8cS" secondAttribute="trailing" constant="20" id="g1h-qd-dX7"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="W3A-ir-drN" secondAttribute="trailing" constant="20" id="hoh-ff-TKq"/>
+                            <constraint firstItem="8u7-Rs-Q42" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="ikX-EI-Hwz"/>
+                            <constraint firstItem="dQ7-PB-8cS" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="kV0-px-8x5"/>
+                            <constraint firstItem="W3A-ir-drN" firstAttribute="leading" secondItem="Ipa-kd-qKn" secondAttribute="leading" constant="20" id="lHl-Uf-YEu"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="OQM-Np-QL4" secondAttribute="trailing" constant="20" id="oE1-zo-W1l"/>
+                            <constraint firstItem="W3A-ir-drN" firstAttribute="top" secondItem="Ipa-kd-qKn" secondAttribute="top" constant="40" id="pEz-iU-D9S"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="4zj-aj-E1e" secondAttribute="trailing" constant="20" id="qtn-5f-gMu"/>
+                            <constraint firstItem="Ipa-kd-qKn" firstAttribute="trailing" secondItem="Utb-wQ-gkS" secondAttribute="trailing" constant="20" id="uvc-us-hmg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ipa-kd-qKn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAf-Hh-Ahk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="848"/>
+        </scene>
         <!--Sign Up-->
         <scene sceneID="CLR-14-VDX">
             <objects>

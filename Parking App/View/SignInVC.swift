@@ -20,8 +20,14 @@ class SignInVC: UIViewController {
     @IBAction func SignInBtn() {
         print("check to see if user exists")
         //fjerfjirj@rfrf.com asdf123
-        var user = User(email: self.email.text!, password: self.password.text!)
-        userData.checkUser(cUser: user)
+        let user = User(email: self.email.text!, password: self.password.text!)
+        let found = userData.checkUser(cUser: user)
+        
+        if(found){
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let menuView = storyBoard.instantiateViewController(withIdentifier: "Menu") as! MenuVC
+            navigationController?.pushViewController(menuView, animated: true)
+        }
     }
     
     override func viewDidLoad() {
