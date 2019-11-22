@@ -26,6 +26,7 @@ class SignUpVC: UIViewController {
     //validation helper
     var validation = Validation()
     var userData = UserData()
+    var paymentData = PaymentData()
     
     @IBAction func SignUp() {
         print("Sign up fuction")
@@ -45,6 +46,9 @@ class SignUpVC: UIViewController {
         if(valide){
             let user = User(name: self.name.text!, email: self.email.text!, password: self.password.text!, contactNo: self.contactNo.text!, carPlateNo: self.plateNo.text!)
             userData.addUser(newTask: user)
+            
+            let payment = PaymentModel(cardNumber: self.cardNo.text!, expiryDate: self.expiryDate.text!, cvvNumber: self.cvv.text!, cardholderName: self.cardName.text!, email: self.email.text!)
+            paymentData.insertPayment(newPayment: payment)
             
             print("Add to database")
             let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

@@ -19,6 +19,8 @@
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
 		F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDC2388438600911436 /* DataBaseHelper.swift */; };
 		F5EF4CDF2388445700911436 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDE2388445700911436 /* User.swift */; };
+		F5EF4D1023888AD200911436 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4D0F23888AD200911436 /* Payment.swift */; };
+		F5EF4D1223888AF600911436 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4D1123888AF600911436 /* Parking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		F5EF4CDC2388438600911436 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		F5EF4CDE2388445700911436 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5EF4D0F23888AD200911436 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		F5EF4D1123888AF600911436 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				F5EF4CDE2388445700911436 /* User.swift */,
+				F5EF4D0F23888AD200911436 /* Payment.swift */,
+				F5EF4D1123888AF600911436 /* Parking.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,10 +190,12 @@
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
 				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
+				F5EF4D1023888AD200911436 /* Payment.swift in Sources */,
 				F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */,
 				F5EF4CDF2388445700911436 /* User.swift in Sources */,
 				F5EF4CDB2388315300911436 /* Validator.swift in Sources */,
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
+				F5EF4D1223888AF600911436 /* Parking.swift in Sources */,
 				AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

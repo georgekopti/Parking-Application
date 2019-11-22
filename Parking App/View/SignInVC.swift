@@ -13,6 +13,7 @@ import CoreData
 class SignInVC: UIViewController {
 
     var userData = UserData()
+    var paymentData = PaymentData()
     
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
@@ -22,6 +23,7 @@ class SignInVC: UIViewController {
         //fjerfjirj@rfrf.com asdf123
         var user = User(email: self.email.text!, password: self.password.text!)
         userData.checkUser(cUser: user)
+        paymentData.checkPayment()
     }
     
     override func viewDidLoad() {
