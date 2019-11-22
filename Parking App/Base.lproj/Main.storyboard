@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="2654" y="90"/>
         </scene>
-        <!--Sign Up Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="CLR-14-VDX">
             <objects>
-                <viewController id="pbE-Bz-Xkn" customClass="SignUpController" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pbE-Bz-Xkn" customClass="SignUpVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uap-9K-eDO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KIc-je-GqV">
                                 <rect key="frame" x="85" y="118" width="309" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRh-IH-6qA">
                                 <rect key="frame" x="20" y="172" width="50" height="34"/>
@@ -118,7 +118,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vRe-k7-Qki">
                                 <rect key="frame" x="80" y="172" width="314" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajD-L5-qKe">
                                 <rect key="frame" x="20" y="226" width="79" height="34"/>
@@ -129,7 +129,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-cy-si9">
                                 <rect key="frame" x="109" y="226" width="285" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcn-BJ-yU7">
                                 <rect key="frame" x="20" y="280" width="136" height="34"/>
@@ -140,7 +140,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sI5-Oq-sPG">
                                 <rect key="frame" x="166" y="280" width="228" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Plate Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqN-aV-RsY">
                                 <rect key="frame" x="20" y="334" width="145" height="34"/>
@@ -168,7 +168,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="npe-Qu-rYA">
                                 <rect key="frame" x="142" y="441.5" width="252" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="cc-number"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Epiry Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jd-j6-YXA">
                                 <rect key="frame" x="20" y="495.5" width="88" height="34"/>
@@ -207,12 +207,15 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ofh-5a-20X">
                                 <rect key="frame" x="149" y="549.5" width="245" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q95-ip-gx0">
                                 <rect key="frame" x="20" y="613.5" width="374" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onSignUpClick" destination="pbE-Bz-Xkn" eventType="touchUpInside" id="q31-ht-sh7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -284,6 +287,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rFW-mD-jTf"/>
                     </view>
+                    <connections>
+                        <outlet property="txtCVVNumber" destination="ged-U0-2JQ" id="wzP-Da-kHL"/>
+                        <outlet property="txtCarPlateNumber" destination="23g-gF-v42" id="txu-1L-fh8"/>
+                        <outlet property="txtCardNumber" destination="npe-Qu-rYA" id="FMx-h3-07N"/>
+                        <outlet property="txtContactNumber" destination="sI5-Oq-sPG" id="AqS-8L-Xa5"/>
+                        <outlet property="txtEmail" destination="vRe-k7-Qki" id="S9i-T5-z8i"/>
+                        <outlet property="txtExpiryDate" destination="j0A-bo-rVX" id="xXv-uU-puR"/>
+                        <outlet property="txtName" destination="KIc-je-GqV" id="Glp-Yc-m30"/>
+                        <outlet property="txtNameOnCard" destination="Ofh-5a-20X" id="KN1-rS-z7a"/>
+                        <outlet property="txtPassword" destination="pf3-cy-si9" id="Qbh-Hr-rac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sle-9C-zUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

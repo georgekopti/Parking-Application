@@ -9,22 +9,32 @@
 import UIKit
 
 class SignUpVC: UIViewController {
-
+    
+    //user info
+    @IBOutlet var txtName : UITextField!
+    @IBOutlet var txtEmail : UITextField!
+    @IBOutlet var txtPassword : UITextField!
+    @IBOutlet var txtContactNumber : UITextField!
+    @IBOutlet var txtCarPlateNumber : UITextField!
+    
+    //payment info
+    @IBOutlet var txtCardNumber : UITextField!
+    @IBOutlet var txtExpiryDate : UITextField!
+    @IBOutlet var txtCVVNumber : UITextField!
+    @IBOutlet var txtNameOnCard : UITextField!
+    
+    
+    @IBAction func onSignUpClick(){
+        print("sign up click")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
