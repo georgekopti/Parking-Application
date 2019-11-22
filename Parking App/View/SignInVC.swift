@@ -10,6 +10,11 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+    @IBAction func SignInBtn() {
+        print("check to see if user exists")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
