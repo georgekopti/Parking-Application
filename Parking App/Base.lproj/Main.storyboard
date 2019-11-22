@@ -85,6 +85,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="4A0-ga-iB7"/>
+                    <connections>
+                        <outlet property="email" destination="EdB-sA-JQe" id="H8G-wO-tBq"/>
+                        <outlet property="password" destination="7hn-To-v8h" id="s1V-tU-3Dp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

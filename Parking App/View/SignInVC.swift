@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import Foundation
+import CoreData
 
 class SignInVC: UIViewController {
 
+    var userData = UserData()
+    
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
+    
     @IBAction func SignInBtn() {
         print("check to see if user exists")
-        
+        //fjerfjirj@rfrf.com asdf123
+        var user = User(email: self.email.text!, password: self.password.text!)
+        userData.checkUser(cUser: user)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     

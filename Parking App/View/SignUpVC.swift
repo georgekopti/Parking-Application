@@ -25,17 +25,11 @@ class SignUpVC: UIViewController {
     
     //validation helper
     var validation = Validation()
+    var userData = UserData()
     
     @IBAction func SignUp() {
         print("Sign up fuction")
-        let valide = validate()
-        //if everything is valide add to database and go back to sign in
-        if(valide){
-            print("Add to database")
-            let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let si = sb.instantiateViewController(withIdentifier: "SignIn") as! SignInVC
-            navigationController?.pushViewController(si, animated: true)
-        }
+        addUserData()
 
     }
     
@@ -45,6 +39,21 @@ class SignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //adding data to db
+    func addUserData(){
+        let valide = validate()
+        if(valide){
+            let user = User(name: self.name.text!, email: self.email.text!, password: self.password.text!, contactNo: self.contactNo.text!, carPlateNo: self.plateNo.text!)
+            userData.addUser(newTask: user)
+            
+            print("Add to database")
+            let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let si = sb.instantiateViewController(withIdentifier: "SignIn") as! SignInVC
+            navigationController?.pushViewController(si, animated: true)
+        }
+    }
+    
+    //validate user input
     func validate() -> Bool {
         var valide = true
         
@@ -123,8 +132,9 @@ class SignUpVC: UIViewController {
             self.cardName.layer.borderColor = UIColor.clear.cgColor
         }
         
-        print(valide)
         return valide
     }
+    
+    
 
 }

@@ -17,6 +17,8 @@
 		AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
+		F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDC2388438600911436 /* DataBaseHelper.swift */; };
+		F5EF4CDF2388445700911436 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDE2388445700911436 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AE1DEB8A23787CE800D49000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		F5EF4CDC2388438600911436 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		F5EF4CDE2388445700911436 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		F5A9D08E237F3A94002B20F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F5EF4CDE2388445700911436 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				F5EF4CDA2388315300911436 /* Validator.swift */,
+				F5EF4CDC2388438600911436 /* DataBaseHelper.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
 				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
+				F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */,
+				F5EF4CDF2388445700911436 /* User.swift in Sources */,
 				F5EF4CDB2388315300911436 /* Validator.swift in Sources */,
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
 				AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */,
