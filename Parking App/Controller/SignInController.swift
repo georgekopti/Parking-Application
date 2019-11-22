@@ -10,6 +10,11 @@ import UIKit
 
 class SignInController: UIViewController {
 
+
+    @IBAction func SignUp(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,5 +31,9 @@ class SignInController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func openScene(){
+        
+    }
 
 }
