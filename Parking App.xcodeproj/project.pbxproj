@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE01CA7C237F54010024D025 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE01CA7B237F54010024D025 /* SignUpVC.swift */; };
 		AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1DEB7923787CE600D49000 /* AppDelegate.swift */; };
 		AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1DEB7B23787CE600D49000 /* SceneDelegate.swift */; };
 		AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1DEB7D23787CE600D49000 /* ViewController.swift */; };
@@ -14,11 +15,11 @@
 		AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE1DEB8223787CE600D49000 /* Parking_App.xcdatamodeld */; };
 		AE1DEB8623787CE800D49000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8523787CE800D49000 /* Assets.xcassets */; };
 		AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */; };
-		F5A9D096237F519C002B20F6 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9D095237F519C002B20F6 /* SignInController.swift */; };
-		F5A9D098237F51E4002B20F6 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9D097237F51E4002B20F6 /* SignUpController.swift */; };
+		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE01CA7B237F54010024D025 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		AE1DEB7623787CE600D49000 /* Parking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1DEB7923787CE600D49000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE1DEB7B23787CE600D49000 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +29,7 @@
 		AE1DEB8523787CE800D49000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1DEB8823787CE800D49000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1DEB8A23787CE800D49000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5A9D095237F519C002B20F6 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
-		F5A9D097237F51E4002B20F6 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,8 @@
 		F5A9D08F237F3AAD002B20F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AE01CA7B237F54010024D025 /* SignUpVC.swift */,
+				F5EF4CD823848B5A00911436 /* SignInVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,8 +96,6 @@
 		F5A9D090237F3AB5002B20F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F5A9D095237F519C002B20F6 /* SignInController.swift */,
-				F5A9D097237F51E4002B20F6 /* SignUpController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,12 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE01CA7C237F54010024D025 /* SignUpVC.swift in Sources */,
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
+				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
-				F5A9D096237F519C002B20F6 /* SignInController.swift in Sources */,
 				AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */,
-				F5A9D098237F51E4002B20F6 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

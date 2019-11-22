@@ -1,20 +1,15 @@
 //
-//  SignInController.swift
+//  SignUpVC.swift
 //  Parking App
 //
-//  Created by Zakim Javer on 2019-11-15.
+//  Created by Xcode User on 2019-11-15.
 //  Copyright © 2019 the flying pigs. All rights reserved.
 //
 
 import UIKit
 
-class SignInController: UIViewController {
+class SignUpVC: UIViewController {
 
-
-    @IBAction func SignUp(_ sender: UIButton) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,9 +26,5 @@ class SignInController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func openScene(){
-        
-    }
 
 }
