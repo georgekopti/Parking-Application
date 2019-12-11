@@ -27,7 +27,4 @@ public class ParkingModel{
     var parkingBeginTime: Date!
     var parkingEndTime: Date!
     var parkingCost: Int!
-    
-    
-    
 }

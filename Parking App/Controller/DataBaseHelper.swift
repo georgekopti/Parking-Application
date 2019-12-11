@@ -110,6 +110,7 @@ public class UserData{
     }
     
 }
+//end of userData
 
 public class PaymentData{
     func insertPayment(newPayment: PaymentModel){
@@ -232,16 +233,11 @@ public class PaymentData{
         //var taskList = [User]()
         let allUsers = (self.getAllPaymentInfo() ?? nil)!
         //to check if there are no users
+        print("Checking payment")
         if (allUsers != nil){
-        
             for user in allUsers{
                 print((user.value(forKey: "card_number") as! String) + " " + (user.value(forKey: "cardholder_name") as! String) + " " + (user.value(forKey: "cvv_number") as! String) + " ")
             }
         }
     }
-    
-    
-    
-    
-    
 }

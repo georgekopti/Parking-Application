@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G87" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CustomerInfo" representedClassName="CustomerInfo" syncable="YES" codeGenerationType="class">
         <attribute name="car_plate_no" optional="YES" attributeType="String"/>
         <attribute name="contact_no" optional="YES" attributeType="String"/>
@@ -26,7 +26,7 @@
     </entity>
     <elements>
         <element name="CustomerInfo" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="PaymentEntity" positionX="-54" positionY="54" width="128" height="118"/>
         <element name="ParkingEntity" positionX="-54" positionY="54" width="128" height="148"/>
+        <element name="PaymentEntity" positionX="-54" positionY="72" width="128" height="118"/>
     </elements>
 </model>

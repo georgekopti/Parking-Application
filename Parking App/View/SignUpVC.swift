@@ -48,6 +48,7 @@ class SignUpVC: UIViewController {
             userData.addUser(newTask: user)
             
             let payment = PaymentModel(cardNumber: self.cardNo.text!, expiryDate: self.expiryDate.text!, cvvNumber: self.cvv.text!, cardholderName: self.cardName.text!, email: self.email.text!)
+            print("payment info: " + payment.cardholderName)
             paymentData.insertPayment(newPayment: payment)
             
             print("Add to database")
