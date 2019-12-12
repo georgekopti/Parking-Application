@@ -231,6 +231,21 @@
             </objects>
             <point key="canvasLocation" x="2654" y="848"/>
         </scene>
+        <!--UpdateVC-->
+        <scene sceneID="NWY-gF-XO2">
+            <objects>
+                <viewController id="o9e-ep-0Zy" customClass="UpdateVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D9K-sK-m4S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="17k-FC-oYf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nnB-CM-7jc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3457" y="852"/>
+        </scene>
         <!--Sign Up-->
         <scene sceneID="CLR-14-VDX">
             <objects>

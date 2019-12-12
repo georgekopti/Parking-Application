@@ -10,23 +10,25 @@
     </entity>
     <entity name="ParkingEntity" representedClassName="ParkingEntity" syncable="YES" codeGenerationType="class">
         <attribute name="building_code" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customer_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="hours" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="parking_begin_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="parking_cost" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="parking_end_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="parking_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="plate_number" optional="YES" attributeType="String"/>
         <attribute name="suite_visiting" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="PaymentEntity" representedClassName="PaymentEntity" syncable="YES" codeGenerationType="class">
         <attribute name="card_number" optional="YES" attributeType="String"/>
         <attribute name="cardholder_name" optional="YES" attributeType="String"/>
+        <attribute name="customer_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="cvv_number" optional="YES" attributeType="String"/>
-        <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="expiry_date" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="CustomerInfo" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="ParkingEntity" positionX="-54" positionY="54" width="128" height="148"/>
+        <element name="ParkingEntity" positionX="-54" positionY="54" width="128" height="178"/>
         <element name="PaymentEntity" positionX="-54" positionY="72" width="128" height="118"/>
     </elements>
 </model>

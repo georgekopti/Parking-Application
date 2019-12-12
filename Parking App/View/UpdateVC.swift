@@ -6,4 +6,9 @@
 //  Copyright © 2019 the flying pigs. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import MapKit
+import CoreLocation
+
+class UpdateVC: UIViewController {}
+

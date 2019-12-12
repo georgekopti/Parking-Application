@@ -9,7 +9,7 @@
 import Foundation
 
 public class PaymentModel{
-    init(cardNumber: String, expiryDate: String, cvvNumber: String, cardholderName: String, email: String) {
+    init(cardNumber: String, expiryDate: String, cvvNumber: String, cardholderName: String, customerId: Int) {
         self.cardNumber = cardNumber
         self.expiryDate = expiryDate
         self.cvvNumber = cvvNumber
@@ -20,9 +20,7 @@ public class PaymentModel{
     var expiryDate: String!
     var cvvNumber: String!
     var cardholderName: String!
-    var email: String!
+    var customerId: Int!
      
-    
-    
     
 }
