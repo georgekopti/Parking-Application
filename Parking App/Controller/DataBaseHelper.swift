@@ -64,20 +64,23 @@ public class UserData{
         return nil
     }
     
-    func checkUser(cUser: User) {
+    func checkUser(cUser: User) -> Bool {
         //var taskList = [User]()
         let allUsers = (self.getAllUsers() ?? nil)!
+        print("All Users:\n")
+        
         //to check if there are no users
         if (allUsers != nil){
         
             for user in allUsers{
                 print((user.value(forKey: "name") as! String) + " " + (user.value(forKey: "email") as! String) + " " + (user.value(forKey: "password") as! String) + " ")
                 if(cUser.email == user.value(forKey: "email") as! String && cUser.password == user.value(forKey: "password") as! String){
-                    print("Hello " + (user.value(forKey: "name") as! String))
+                    return true
                 }
                 
             }
         }
+        return false
     }
     
     
