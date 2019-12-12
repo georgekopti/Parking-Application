@@ -32,4 +32,11 @@ class User {
         self.contactNo = ""
         self.carPlateNo = ""
     }
+    init() {
+        self.name = ""
+        self.email = ""
+        self.password = ""
+        self.contactNo = ""
+        self.carPlateNo = ""
+    }
 }

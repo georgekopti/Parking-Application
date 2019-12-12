@@ -23,10 +23,12 @@ class SignInVC: UIViewController {
         //fjerfjirj@rfrf.com asdf123
         let user = User(email: self.email.text!, password: self.password.text!)
         let found = userData.checkUser(cUser: user)
-        
-        if(found){
+        paymentData.checkPayment();
+        print(found)
+        if(found >= 0){
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let menuView = storyBoard.instantiateViewController(withIdentifier: "Menu") as! MenuVC
+            menuView.user = userData.returnUser(id: found)
             navigationController?.pushViewController(menuView, animated: true)
         }
     }

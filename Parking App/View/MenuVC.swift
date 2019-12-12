@@ -9,8 +9,14 @@
 import UIKit
 
 class MenuVC: UIViewController {
-
+    
+    var user : User = User()
+    
+    
+    @IBOutlet var userInfo: UILabel!
+    
     override func viewDidLoad() {
+        userInfo.text = "Welcome "+user.name
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

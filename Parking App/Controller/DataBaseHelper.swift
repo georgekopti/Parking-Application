@@ -64,7 +64,8 @@ public class UserData{
         return nil
     }
     
-    func checkUser(cUser: User) -> Bool {
+    //sees if the user exists in the db. if found their id is returned else it will return -1
+    func checkUser(cUser: User) -> Int {
         //var taskList = [User]()
         let allUsers = (self.getAllUsers() ?? nil)!
         print("All Users:\n")
@@ -75,14 +76,38 @@ public class UserData{
             for user in allUsers{
                 print((user.value(forKey: "name") as! String) + " " + (user.value(forKey: "email") as! String) + " " + (user.value(forKey: "password") as! String) + " ")
                 if(cUser.email == user.value(forKey: "email") as! String && cUser.password == user.value(forKey: "password") as! String){
-                    return true
+                    return user.value(forKey: "id") as! Int
                 }
                 
             }
         }
-        return false
+        return -1
     }
     
+    //gets current user
+    func returnUser(id : Int) -> User{
+        
+        let currentUser = User()
+        
+        let allUsers = (self.getAllUsers() ?? nil)!
+        
+        //to check if there are no users
+        if (allUsers != nil){
+            for user in allUsers{
+                if(user.value(forKey: "id") as! Int == id){
+                    currentUser.id = user.value(forKey: "id") as! Int
+                    currentUser.email = user.value(forKey: "email") as! String
+                    currentUser.name = user.value(forKey: "name") as! String
+                    currentUser.password = user.value(forKey: "password") as! String
+                    currentUser.contactNo = user.value(forKey: "contact_no") as! String
+                    currentUser.carPlateNo = user.value(forKey: "car_plate_no") as! String
+                    return currentUser
+                }
+                
+            }
+        }
+        return currentUser
+    }
     
     //gets new id
     func getNextUserId() -> Int{
