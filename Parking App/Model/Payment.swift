@@ -9,13 +9,13 @@
 import Foundation
 
 public class PaymentModel{
-    init(cardNumber: String, expiryDate: String, cvvNumber: String, cardholderName: String, email: String) {
+    
+    init(cardNumber: String, expiryDate: String, cvvNumber: String, cardholderName: String, id: Int) {
         self.cardNumber = cardNumber
         self.expiryDate = expiryDate
         self.cvvNumber = cvvNumber
         self.cardholderName = cardholderName
-        self.email = email
-        self.customerId = 0
+        self.customerId = id
     }
     
     var cardNumber: String!
@@ -23,7 +23,6 @@ public class PaymentModel{
     var cvvNumber: String!
     var cardholderName: String!
     var customerId: Int!
-    var email: String!
      
     
 }

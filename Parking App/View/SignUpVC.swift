@@ -45,10 +45,10 @@ class SignUpVC: UIViewController {
         let valide = validate()
         if(valide){
             let user = User(name: self.name.text!, email: self.email.text!, password: self.password.text!, contactNo: self.contactNo.text!, carPlateNo: self.plateNo.text!)
-            userData.addUser(newTask: user)
+            let id = userData.addUser(newTask: user)
             
             //adding payment 
-            let payment = PaymentModel(cardNumber: self.cardNo.text!, expiryDate: self.expiryDate.text!, cvvNumber: self.cvv.text!, cardholderName: self.cardName.text!, email: self.email.text!)
+            let payment = PaymentModel(cardNumber: self.cardNo.text!, expiryDate: self.expiryDate.text!, cvvNumber: self.cvv.text!, cardholderName: self.cardName.text!, id: id)
             print("payment info: " + payment.cardholderName)
             paymentData.insertPayment(newPayment: payment)
             
