@@ -1,0 +1,62 @@
+<p><span style="text-decoration: underline;"><span style="color: #000000; text-decoration: underline;"><img src="https://images.squarespace-cdn.com/content/v1/5811246737c581e3d863f020/1552087125887-8W0P8Z9UD97MOY1RN98V/ke17ZwdGBToddI8pDm48kAWgt8CrNtV6tLa6a1X3H9JZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx-7TtinceF5Jyppo7OJzZHZvzmmre3Kyj4B7kCeX7BOK4o7tzX-JJptmKqxnFxNAI/FlyingPig.jpg?format=1500w" alt="" width="369" height="246" /></span></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #ff00ff;">The Flying Pigs</span></p>
+<h1 style="text-align: center;"><span style="color: #ff0000;"><strong>&nbsp;Parking Application</strong></span></h1>
+<h4><span style="text-decoration: underline;"><span style="color: #000000; text-decoration: underline;">Application Guidelines:</span></span></h4>
+<p style="text-align: justify;">Thank you for chosing the three flying pigs to build the application for you. Our three&nbsp;guinea pigs include momo, zuzu and juju. If there is a need for maintenance please contact the editors in contact us page. All three pigs have contributed towards successful creation of the application and made sure the application works on all iOS devices. If there is an issue with the app, please contact the creators. This application might not work seamlessly on simulator so, we recommend running the application on an actual iOS device.&nbsp;</p>
+<p style="text-align: justify;">The following are the guidelines for login and sign up implemented in our application:</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="color: #000000; text-decoration: underline;">SignIn:</span></span></p>
+<p style="padding-left: 60px; text-align: justify;">User is expected to remember the login credentials which include email id and password. If the user forgets the credentials or wants application to remember the password, we were generous enough to add those functionalities in our application. If user clicks forgot password button, user is redirected to another screen where user is asked for the email and the name. The credentials are searched in the database and if the user was registered earlier, the password is printed for the user on the screen. User can take a peek at the password and go back to signIn page and login using the password shown. Remember my credentials will remember user's email and password and will make signing in convenient. If user is not already registered and wishes to sign up, user is redirected to <span style="text-decoration: underline;">SignUp</span> page.</p>
+<p style="padding-left: 60px;">&nbsp;</p>
+<p><span style="text-decoration: underline;">SignUp:</span></p>
+<p style="padding-left: 60px; text-align: justify;">User is asked for basic information like name, email, password, contact number, plate number and payment information. Taking all the details in sign up itself makes it easier for the user to buy a permit on a click of a button without entering the payment information each time user buys a permit. Once we have the user's information, we keep the information inside the local database and user can access functionalities of the app after signing in with the account.&nbsp;</p>
+<p style="padding-left: 60px;">&nbsp;</p>
+<p><span style="text-decoration: underline;">SignOut:</span></p>
+<p style="padding-left: 60px; text-align: justify;">Once user is satisfied with the parking service that the application provides, user can sign out of the account to prevent anyone else using the payment option specified by the user. Signing out will bring the user back to sign in screen and will require the user to enter the credentials again if the user wishes to use the functionalities again.&nbsp;</p>
+<p style="padding-left: 60px;">&nbsp;</p>
+<p style="text-align: justify;">Once user is successfully registered and logged in, user can access the functionalities of the application which includes Add Parking, View Parking Receipt, View Parking Receipt List, Search Nearby Facilities, Update User Profile, Parking App Manual and Customer Support.</p>
+<p style="text-align: justify;">The following are the guidelines to each mentioned functionalities implemented in our application:</p>
+<p><span style="text-decoration: underline;">Add Parking:</span></p>
+<ul>
+<li style="text-align: justify;">Add parking accepts the building code (each building will have a unique numerical code), number of hours intended to park (1hr or less, 3hr, 10hr, 24hr), car plate number and suite number of the host.</li>
+<li style="text-align: justify;">The date and time is automatically picked and saved in the database.</li>
+<li style="text-align: justify;">It verifies plate number that the user entered is same as in the user profile or not. If both the plate numbers match up only then the parking is added and the user is charged on the account user provided while signing up.&nbsp;</li>
+<li style="text-align: justify;">It saves parking charges based on the following charges:
+<ul>
+<li>$4 for 1hr or less</li>
+<li>$8 for 3hr</li>
+<li>$12 for 10hr</li>
+<li>$20 daily max 24hr</li>
+</ul>
+</li>
+<li style="text-align: justify;">The final confirmation is displayed to the user if the parking is added successfully.</li>
+</ul>
+<p><span style="text-decoration: underline;">View Parking Receipt:</span></p>
+<ul>
+<li style="text-align: justify;">Displays car plate number, date and time of parking, duration of parking, building code, suite number of host and the parking cost of the latest parking.</li>
+</ul>
+<p><span style="text-decoration: underline;">View Parking Receipt List:</span></p>
+<ul>
+<li style="text-align: justify;">Displays the history of all the parking user added in a list view.</li>
+<li style="text-align: justify;">When a history is selected from the list, the full details of the parking is displayed to user similar to parking receipt.</li>
+</ul>
+<p><span style="text-decoration: underline;">Search Nearby Facilities:</span></p>
+<ul>
+<li style="text-align: justify;">Displays map showing current location of the user and allows user to search for nearby parking facilities.</li>
+</ul>
+<p><span style="text-decoration: underline;">Update User Profile:</span></p>
+<ul>
+<li style="text-align: justify;">It allows iser to update user information given at the time of registration such as personal details and payment details.</li>
+</ul>
+<p><span style="text-decoration: underline;">Parking App Manual:</span></p>
+<ul>
+<li style="text-align: justify;">It opens the web page showing guidelines for using the application. (This webpage)</li>
+</ul>
+<p><span style="text-decoration: underline;">Customer Support:</span></p>
+<ul>
+<li>Displays customer support email address and contact number.
+<ul>
+<li style="text-align: justify;">Upon selecting email, it opens the email application for sending the email. It automatically fills the recipient of the mail to the creators of the application.</li>
+<li style="text-align: justify;">Upon selecting contact number, it opens the dialer and automatically fills the contact number of the creators of the application.</li>
+</ul>
+</li>
+</ul>
