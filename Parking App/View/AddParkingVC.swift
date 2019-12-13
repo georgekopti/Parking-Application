@@ -10,6 +10,7 @@ import UIKit
 
 class AddParkingVC: UIViewController {
     
+    var parkingData = ParkingData()
     var user : User = User()
     
     @IBOutlet var txtBuildingCode : UITextField!
@@ -22,18 +23,23 @@ class AddParkingVC: UIViewController {
     }
     
     var numberOfHours : Int = 1
+    var price : Int = 4
     
     @IBAction func indexChanged(sender : UISegmentedControl) {
         
         switch sender.selectedSegmentIndex {
         case 0:
             numberOfHours = 1
+            price = 4
         case 1:
             numberOfHours = 3
+            price = 8
         case 2:
             numberOfHours = 10
+            price = 12
         case 3:
             numberOfHours = 24
+            price = 20
         default:
             break;
         }
@@ -42,33 +48,29 @@ class AddParkingVC: UIViewController {
     
     @IBAction func onAddParkingClick(){
         
+        let plateNumber = txtPlateNumber.text!
+        let buildingNumber = Int(txtBuildingCode.text!)
+        let suitNumber = Int(txtSuitNumber.text!)
+        let date = Date()
+        
         
         if(txtPlateNumber.text! == user.carPlateNo){
             
+            let parking : ParkingModel = ParkingModel(plateNumber: plateNumber,
+                                                      buildingCode: buildingNumber!,
+                                                      suitNumber: suitNumber!,
+                                                      hoursParked: numberOfHours,
+                                                      parkingDate: date,
+                                                      parkingCost: price,
+                                                      userId: user.id)
             
+            parkingData.insertParking(newParking: parking)
+            print("Done and Added")
             
         }
-        
-        
-        
-        print(user.carPlateNo)
-        //let date = Date()
-        
-        //print(txtBuildingCode.text!)
-        //print(numberOfHours)
-        //print(txtPlateNumber.text!)
-        //print(txtSuitNumber.text!)
-        
-        
-        
-        //print(date)
-        
-        
     
+        print(user.carPlateNo)
         
     }
-    
-
-
 
 }
