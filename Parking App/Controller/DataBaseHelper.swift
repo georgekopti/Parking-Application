@@ -299,3 +299,61 @@ public class PaymentData{
         return currentPayment
     }
 }
+
+public class ParkingData{
+    
+    
+    func insertParking(newParking: ParkingModel){
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let parkingEntity : NSEntityDescription? = NSEntityDescription.entity(forEntityName: "ParkingEntity", in: managedContext)
+        
+        if (parkingEntity != nil){
+            let parking = NSManagedObject(entity: parkingEntity!, insertInto: managedContext)
+            
+            parking.setValue(newParking.buildingCode, forKey: "building_code")
+            parking.setValue(newParking.hoursParked, forKey: "hours")
+            parking.setValue(newParking.plateNumber, forKey: "plate_number")
+            parking.setValue(newParking.suitNumber, forKey: "suit_number")
+            parking.setValue(newParking.parkingDate, forKey: "parking_date")
+            parking.setValue(newParking.parkingCost, forKey: "parking_cost")
+            parking.setValue(newParking.userId, forKey: "customer_id")
+           
+            
+            do{
+                //to perform insert operation on database table
+                try managedContext.save()
+                
+            }catch let error as NSError{
+                print("Insert parking failed...\(error), \(error.userInfo)")
+            }
+        }
+    }
+    
+    
+    func getAllParking() -> [NSManagedObject]?{
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return nil
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "ParkingEntity")
+        
+        do{
+            let result = try managedContext.fetch(fetchRequest)
+            
+            return result as? [NSManagedObject]
+        }catch{
+            print("Data fetching Unsuccessful")
+        }
+        return nil
+    }
+    
+    
+}
