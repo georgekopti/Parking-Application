@@ -53,7 +53,7 @@ class AddParkingVC: UIViewController {
         let suitNumber = Int(txtSuitNumber.text!)
         let date = Date()
         
-        
+        //hello
         if(txtPlateNumber.text! == user.carPlateNo){
             
             let parking : ParkingModel = ParkingModel(plateNumber: plateNumber,
