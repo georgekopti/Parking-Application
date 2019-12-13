@@ -94,7 +94,7 @@ public class UserData{
         let currentUser = User()
         
         let allUsers = (self.getAllUsers() ?? nil)!
-        
+        print("Called ReturnUser : \(id)")
         //to check if there are no users
         if (allUsers != nil){
             for user in allUsers{
@@ -105,6 +105,8 @@ public class UserData{
                     currentUser.password = user.value(forKey: "password") as! String
                     currentUser.contactNo = user.value(forKey: "contact_no") as! String
                     currentUser.carPlateNo = user.value(forKey: "car_plate_no") as! String
+                    
+                    print("This is the Dtat: \(user.value(forKey: "email") as! String)")
                     return currentUser
                 }
                 
@@ -272,5 +274,28 @@ public class PaymentData{
                 print("customer in payment ID = \(id), name= \(name)")
             }
         }
+    }
+    
+    func returnPayment(id : Int) -> PaymentModel{
+        
+        let currentPayment = PaymentModel()
+        
+        let allPayments = (self.getAllPaymentInfo() ?? nil)!
+        
+        //to check if there are no users
+        if (allPayments != nil){
+            for payment in allPayments{
+                if(payment.value(forKey: "customer_id") as! Int == id){
+                    currentPayment.customerId = (payment.value(forKey: "customer_id") as! Int)
+                    currentPayment.cardNumber = (payment.value(forKey: "card_number") as! String)
+                    currentPayment.cvvNumber = (payment.value(forKey: "cvv_number") as! String)
+                    currentPayment.expiryDate = (payment.value(forKey: "expiry_date") as! String)
+                    currentPayment.cardholderName = (payment.value(forKey: "cardholder_name") as! String)
+                    return currentPayment
+                }
+                
+            }
+        }
+        return currentPayment
     }
 }

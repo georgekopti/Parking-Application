@@ -32,5 +32,12 @@ class MenuVC: UIViewController {
         
     }
     
-
+    @IBAction func Update() {
+        let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let si = sb.instantiateViewController(withIdentifier: "UpdateProfile") as! UpdateProfileVC
+        si.id = user.id
+        navigationController?.pushViewController(si, animated: true)
+    }
+    
+    
 }

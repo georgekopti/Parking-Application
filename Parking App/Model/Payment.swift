@@ -17,6 +17,13 @@ public class PaymentModel{
         self.cardholderName = cardholderName
         self.customerId = id
     }
+    init() {
+        self.cardNumber = "cardNumber"
+        self.expiryDate = "expiryDate"
+        self.cvvNumber = "cvvNumber"
+        self.cardholderName = "cardholderName"
+        self.customerId = -1
+    }
     
     var cardNumber: String!
     var expiryDate: String!
