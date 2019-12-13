@@ -237,11 +237,17 @@
                                 <rect key="frame" x="20" y="395" width="374" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Parking App Manual"/>
+                                <connections>
+                                    <action selector="ParkingManual:" destination="7iC-e1-DkT" eventType="touchUpInside" id="M9u-d9-1lx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgA-JV-wKl">
                                 <rect key="frame" x="20" y="453" width="374" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Consumer Support"/>
+                                <connections>
+                                    <action selector="CustomerSupport:" destination="7iC-e1-DkT" eventType="touchUpInside" id="1aa-vA-9FT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zj-aj-E1e">
                                 <rect key="frame" x="20" y="511" width="374" height="38"/>
@@ -1024,7 +1030,7 @@
         <!--Customer SupportVC-->
         <scene sceneID="NzS-xG-L50">
             <objects>
-                <viewController id="iUO-Ol-qjg" customClass="CustomerSupportVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomerSupport" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iUO-Ol-qjg" customClass="CustomerSupportVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fk7-6H-p9s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1069,7 +1075,7 @@
         <!--Parking ManualVC-->
         <scene sceneID="d7F-5w-Lez">
             <objects>
-                <viewController id="rl2-2O-Ltc" customClass="ParkingManualVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParkingManual" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rl2-2O-Ltc" customClass="ParkingManualVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fa1-mt-KZi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

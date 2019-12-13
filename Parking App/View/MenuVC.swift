@@ -71,4 +71,23 @@ class MenuVC: UIViewController {
         navigationController?.pushViewController(updateView, animated: true)
     }
     
+    @IBAction func ParkingManual(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let updateView = storyBoard.instantiateViewController(withIdentifier: "ParkingManual") as! ParkingManualVC
+        navigationController?.pushViewController(updateView, animated: true)
+
+        
+    }
+    
+    
+    @IBAction func CustomerSupport(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let updateView = storyBoard.instantiateViewController(withIdentifier: "CustomerSupport") as! CustomerSupportVC
+        navigationController?.pushViewController(updateView, animated: true)
+        
+    }
+    
+    
 }
