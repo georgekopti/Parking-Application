@@ -67,6 +67,11 @@ class AddParkingVC: UIViewController {
             parkingData.insertParking(newParking: parking)
             print("Done and Added")
             
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let singleReceiptView = storyBoard.instantiateViewController(withIdentifier: "SingleReceipt") as! SingleReceiptVC
+            singleReceiptView.parking = parking
+            navigationController?.pushViewController(singleReceiptView, animated: true)
+            
         }
     
         print(user.carPlateNo)

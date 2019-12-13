@@ -12,6 +12,15 @@ public class ParkingModel{
         self.userId = userId
     }
     
+    init() {
+        self.plateNumber = ""
+        self.buildingCode = 0
+        self.suitNumber = 0
+        self.hoursParked = 0
+        self.parkingDate = nil
+        self.parkingCost = 0
+        self.userId = 0
+    }
     var plateNumber: String!
     var buildingCode: Int!
     var suitNumber: Int!

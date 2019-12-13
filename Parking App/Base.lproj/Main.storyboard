@@ -579,10 +579,10 @@
             </objects>
             <point key="canvasLocation" x="4321.739130434783" y="89.732142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Single ReceiptVC-->
         <scene sceneID="1TH-4V-LzU">
             <objects>
-                <viewController id="245-dv-5E0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingleReceipt" id="245-dv-5E0" customClass="SingleReceiptVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PTZ-aQ-amb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -656,6 +656,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MhX-e6-jaE"/>
                     </view>
+                    <connections>
+                        <outlet property="lblBuildingCode" destination="sNg-bn-7Gg" id="7WA-fo-ko4"/>
+                        <outlet property="lblCarPlate" destination="C0d-ry-36G" id="HX8-al-Yfy"/>
+                        <outlet property="lblDate" destination="8uh-10-PTK" id="5uE-Iq-IFT"/>
+                        <outlet property="lblDuration" destination="ZVH-zF-QAr" id="fir-Dl-9Jf"/>
+                        <outlet property="lblPrice" destination="zoD-Cn-wIg" id="aik-h0-WV6"/>
+                        <outlet property="lblSuitNumber" destination="516-ot-OYh" id="tft-uo-Dvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ad-At-s0n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
