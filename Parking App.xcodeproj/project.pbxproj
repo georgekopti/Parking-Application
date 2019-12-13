@@ -19,6 +19,9 @@
 		AE475243238862A000DB287C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE475242238862A000DB287C /* SearchVC.swift */; };
 		AED8086423A31C2600321FA5 /* AddParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED8086323A31C2600321FA5 /* AddParkingVC.swift */; };
 		AED8086623A34B8100321FA5 /* SingleReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED8086523A34B8100321FA5 /* SingleReceiptVC.swift */; };
+		BF54518923A3673900D07557 /* ParkingManualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54518823A3673900D07557 /* ParkingManualVC.swift */; };
+		BF54518B23A36F3A00D07557 /* website.html in Resources */ = {isa = PBXBuildFile; fileRef = BF54518A23A36F3A00D07557 /* website.html */; };
+		BF54518E23A3715500D07557 /* CustomerSupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54518D23A3715500D07557 /* CustomerSupportVC.swift */; };
 		F52E6FDC23A2D2DD00533CCE /* UpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E6FDB23A2D2DD00533CCE /* UpdateVC.swift */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
@@ -43,6 +46,10 @@
 		AE475242238862A000DB287C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		AED8086323A31C2600321FA5 /* AddParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParkingVC.swift; sourceTree = "<group>"; };
 		AED8086523A34B8100321FA5 /* SingleReceiptVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleReceiptVC.swift; sourceTree = "<group>"; };
+		BF54518823A3673900D07557 /* ParkingManualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingManualVC.swift; sourceTree = "<group>"; };
+		BF54518A23A36F3A00D07557 /* website.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = website.html; path = ../website.html; sourceTree = "<group>"; };
+		BF54518C23A36F4400D07557 /* website.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = website.html; sourceTree = "<group>"; };
+		BF54518D23A3715500D07557 /* CustomerSupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupportVC.swift; sourceTree = "<group>"; };
 		F52E6FDB23A2D2DD00533CCE /* UpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateVC.swift; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		AE1DEB6D23787CE600D49000 = {
 			isa = PBXGroup;
 			children = (
+				BF54518A23A36F3A00D07557 /* website.html */,
 				AE1DEB7823787CE600D49000 /* Parking App */,
 				AE1DEB7723787CE600D49000 /* Products */,
 			);
@@ -110,6 +118,7 @@
 		F5A9D08F237F3AAD002B20F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BF54518C23A36F4400D07557 /* website.html */,
 				AE01CA7B237F54010024D025 /* SignUpVC.swift */,
 				F5EF4CD823848B5A00911436 /* SignInVC.swift */,
 				AE47524023885D8F00DB287C /* MenuVC.swift */,
@@ -117,6 +126,8 @@
 				F52E6FDB23A2D2DD00533CCE /* UpdateVC.swift */,
 				AED8086323A31C2600321FA5 /* AddParkingVC.swift */,
 				AED8086523A34B8100321FA5 /* SingleReceiptVC.swift */,
+				BF54518823A3673900D07557 /* ParkingManualVC.swift */,
+				BF54518D23A3715500D07557 /* CustomerSupportVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +201,7 @@
 			files = (
 				AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */,
 				AE1DEB8623787CE800D49000 /* Assets.xcassets in Resources */,
+				BF54518B23A36F3A00D07557 /* website.html in Resources */,
 				AE1DEB8123787CE600D49000 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +221,7 @@
 				F52E6FDC23A2D2DD00533CCE /* UpdateVC.swift in Sources */,
 				F5EF4D1023888AD200911436 /* Payment.swift in Sources */,
 				AED8086623A34B8100321FA5 /* SingleReceiptVC.swift in Sources */,
+				BF54518E23A3715500D07557 /* CustomerSupportVC.swift in Sources */,
 				F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */,
 				F5EF4CDF2388445700911436 /* User.swift in Sources */,
 				F5EF4CDB2388315300911436 /* Validator.swift in Sources */,
@@ -216,6 +229,7 @@
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
 				F5EF4D1223888AF600911436 /* Parking.swift in Sources */,
 				AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */,
+				BF54518923A3673900D07557 /* ParkingManualVC.swift in Sources */,
 				AE47524123885D8F00DB287C /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

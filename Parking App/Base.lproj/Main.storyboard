@@ -133,6 +133,48 @@
             </objects>
             <point key="canvasLocation" x="2672" y="1586"/>
         </scene>
+        <!--Parking ManualVC-->
+        <scene sceneID="y45-Tf-aHM">
+            <objects>
+                <viewController id="VYS-qa-frg" customClass="ParkingManualVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgl-87-ldW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ey-aB-Xts">
+                                <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Gie-7T-J2h">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gie-7T-J2h" firstAttribute="leading" secondItem="1cG-4c-MUW" secondAttribute="leading" constant="20" id="3UN-qd-RKR"/>
+                            <constraint firstItem="1cG-4c-MUW" firstAttribute="bottom" secondItem="9Ey-aB-Xts" secondAttribute="bottom" id="MrC-0K-GsH"/>
+                            <constraint firstItem="1cG-4c-MUW" firstAttribute="trailing" secondItem="Gie-7T-J2h" secondAttribute="trailing" constant="20" id="Pp0-BL-64M"/>
+                            <constraint firstItem="1cG-4c-MUW" firstAttribute="bottom" secondItem="Gie-7T-J2h" secondAttribute="bottom" constant="20" id="Wkm-Og-VEH"/>
+                            <constraint firstItem="9Ey-aB-Xts" firstAttribute="top" secondItem="1cG-4c-MUW" secondAttribute="top" constant="20" id="hG8-b2-lOH"/>
+                            <constraint firstItem="1cG-4c-MUW" firstAttribute="trailing" secondItem="9Ey-aB-Xts" secondAttribute="trailing" id="k8Z-rd-EH8"/>
+                            <constraint firstItem="9Ey-aB-Xts" firstAttribute="leading" secondItem="1cG-4c-MUW" secondAttribute="leading" id="mug-d1-XM6"/>
+                            <constraint firstItem="Gie-7T-J2h" firstAttribute="top" secondItem="1cG-4c-MUW" secondAttribute="top" constant="20" id="vc6-3G-Nqt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1cG-4c-MUW"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Gie-7T-J2h" id="gOm-y6-P6s"/>
+                        <outlet property="webView" destination="9Ey-aB-Xts" id="oSu-2z-0Jb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7r-Hc-QQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="810"/>
+        </scene>
         <!--MenuVC-->
         <scene sceneID="Eba-1R-aGi">
             <objects>
@@ -248,6 +290,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnB-CM-7jc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3457" y="852"/>
+        </scene>
+        <!--Customer SupportVC-->
+        <scene sceneID="vuZ-9B-fot">
+            <objects>
+                <viewController id="z00-mV-chK" customClass="CustomerSupportVC" customModule="Parking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HsY-sQ-4Bb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBR-Yz-Nq8">
+                                <rect key="frame" x="20" y="64" width="374" height="30"/>
+                                <state key="normal" title="Phone Number: "/>
+                                <connections>
+                                    <action selector="doingCall" destination="z00-mV-chK" eventType="touchUpInside" id="phX-xi-24a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAy-ar-pLp">
+                                <rect key="frame" x="20" y="114" width="374" height="30"/>
+                                <state key="normal" title="Email:"/>
+                                <connections>
+                                    <action selector="mailButtonPressed:" destination="z00-mV-chK" eventType="touchUpInside" id="gos-H1-HwY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GAy-ar-pLp" firstAttribute="top" secondItem="yBR-Yz-Nq8" secondAttribute="bottom" constant="20" id="SQe-8q-n00"/>
+                            <constraint firstItem="yBR-Yz-Nq8" firstAttribute="top" secondItem="B89-HM-Ax5" secondAttribute="top" constant="20" id="auf-JY-bAH"/>
+                            <constraint firstItem="yBR-Yz-Nq8" firstAttribute="leading" secondItem="B89-HM-Ax5" secondAttribute="leading" constant="20" id="bdF-AX-s8A"/>
+                            <constraint firstItem="GAy-ar-pLp" firstAttribute="leading" secondItem="B89-HM-Ax5" secondAttribute="leading" constant="20" id="dna-w9-xCa"/>
+                            <constraint firstItem="B89-HM-Ax5" firstAttribute="trailing" secondItem="yBR-Yz-Nq8" secondAttribute="trailing" constant="20" id="jJ9-jK-bAc"/>
+                            <constraint firstItem="B89-HM-Ax5" firstAttribute="trailing" secondItem="GAy-ar-pLp" secondAttribute="trailing" constant="20" id="owM-v9-g38"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B89-HM-Ax5"/>
+                    </view>
+                    <connections>
+                        <outlet property="callButton" destination="yBR-Yz-Nq8" id="o7R-np-zgN"/>
+                        <outlet property="emailButton" destination="GAy-ar-pLp" id="64n-Ge-Vq7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bO-dz-Iyd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4322" y="852"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="CLR-14-VDX">
