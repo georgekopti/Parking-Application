@@ -20,6 +20,8 @@
 		AE47524123885D8F00DB287C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47524023885D8F00DB287C /* MenuVC.swift */; };
 		AE475243238862A000DB287C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE475242238862A000DB287C /* SearchVC.swift */; };
 		F52E6FDE23A3049700533CCE /* UpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E6FDD23A3049700533CCE /* UpdateProfileVC.swift */; };
+		F52E6FE023A41E1B00533CCE /* ReceiptListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E6FDF23A41E1B00533CCE /* ReceiptListVC.swift */; };
+		F52E6FE223A4212300533CCE /* ReceiptListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E6FE123A4212300533CCE /* ReceiptListTVC.swift */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
 		F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDC2388438600911436 /* DataBaseHelper.swift */; };
@@ -44,6 +46,8 @@
 		AE47524023885D8F00DB287C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		AE475242238862A000DB287C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		F52E6FDD23A3049700533CCE /* UpdateProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileVC.swift; sourceTree = "<group>"; };
+		F52E6FDF23A41E1B00533CCE /* ReceiptListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListVC.swift; sourceTree = "<group>"; };
+		F52E6FE123A4212300533CCE /* ReceiptListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptListTVC.swift; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		F5EF4CDC2388438600911436 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				AE47524023885D8F00DB287C /* MenuVC.swift */,
 				AE475242238862A000DB287C /* SearchVC.swift */,
 				F52E6FDD23A3049700533CCE /* UpdateProfileVC.swift */,
+				F52E6FDF23A41E1B00533CCE /* ReceiptListVC.swift */,
+				F52E6FE123A4212300533CCE /* ReceiptListTVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,10 +212,12 @@
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
 				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
+				F52E6FE023A41E1B00533CCE /* ReceiptListVC.swift in Sources */,
 				F5EF4D1023888AD200911436 /* Payment.swift in Sources */,
 				F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */,
 				AE31AA0423A3EB5C00FD2898 /* SingleReceiptVC.swift in Sources */,
 				F5EF4CDF2388445700911436 /* User.swift in Sources */,
+				F52E6FE223A4212300533CCE /* ReceiptListTVC.swift in Sources */,
 				F5EF4CDB2388315300911436 /* Validator.swift in Sources */,
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
 				AE31AA0323A3EB5C00FD2898 /* AddParkingVC.swift in Sources */,
