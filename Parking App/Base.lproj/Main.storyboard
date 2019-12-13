@@ -7,6 +7,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="ybt-CX-ud1">
+            <objects>
+                <viewController id="2w3-fl-Xg8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ktc-mZ-Hoo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8T-LK-iim">
+                                <rect key="frame" x="20" y="64" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-oK-ImK">
+                                <rect key="frame" x="20" y="117.5" width="50" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojN-ai-7i1">
+                                <rect key="frame" x="80" y="117.5" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Z7-ND-rLH" firstAttribute="trailing" secondItem="ojN-ai-7i1" secondAttribute="trailing" constant="20" id="2j0-tw-a8A"/>
+                            <constraint firstItem="c8T-LK-iim" firstAttribute="top" secondItem="6Z7-ND-rLH" secondAttribute="top" constant="20" id="9z7-SA-yHp"/>
+                            <constraint firstItem="eP6-oK-ImK" firstAttribute="leading" secondItem="6Z7-ND-rLH" secondAttribute="leading" constant="20" id="C7x-VS-9B5"/>
+                            <constraint firstItem="eP6-oK-ImK" firstAttribute="top" secondItem="c8T-LK-iim" secondAttribute="bottom" constant="20" id="KqA-40-PcG"/>
+                            <constraint firstItem="ojN-ai-7i1" firstAttribute="top" secondItem="c8T-LK-iim" secondAttribute="bottom" constant="20" id="L64-NU-Miu"/>
+                            <constraint firstItem="ojN-ai-7i1" firstAttribute="leading" secondItem="eP6-oK-ImK" secondAttribute="trailing" constant="10" id="MHE-Ov-VH1"/>
+                            <constraint firstItem="c8T-LK-iim" firstAttribute="leading" secondItem="6Z7-ND-rLH" secondAttribute="leading" constant="20" id="dAe-8E-M7c"/>
+                            <constraint firstItem="ojN-ai-7i1" firstAttribute="centerY" secondItem="eP6-oK-ImK" secondAttribute="centerY" id="h2s-2Q-NNe"/>
+                            <constraint firstItem="6Z7-ND-rLH" firstAttribute="trailing" secondItem="c8T-LK-iim" secondAttribute="trailing" constant="20" id="r4J-Te-nFv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Z7-ND-rLH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Naz-qg-wKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2654" y="-713"/>
+        </scene>
         <!--Sign In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
