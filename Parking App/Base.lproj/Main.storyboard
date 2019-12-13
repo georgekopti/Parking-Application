@@ -46,7 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQW-ol-zqm">
                                 <rect key="frame" x="20" y="796" width="374" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="SignInBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFc-28-MbW"/>
                                 </connections>
@@ -186,6 +186,9 @@
                                 <rect key="frame" x="20" y="511" width="374" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="SignOut" destination="7iC-e1-DkT" eventType="touchUpInside" id="oeG-jp-Gia"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmm-PU-pRr">
                                 <rect key="frame" x="20" y="64" width="374" height="21"/>
@@ -592,6 +595,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Cancel:" destination="Uen-JQ-9O0" eventType="touchUpInside" id="ZgK-kn-Z0t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkx-SX-dDa">
                                 <rect key="frame" x="60" y="603.5" width="96" height="48"/>
@@ -696,7 +702,6 @@
                         <outlet property="Name" destination="1np-fq-lN9" id="uw8-b7-Pe1"/>
                         <outlet property="Password" destination="iEy-zs-4Gz" id="9Yy-jY-ieG"/>
                         <outlet property="PlateNo" destination="6cg-HK-lyd" id="iqO-mx-WHf"/>
-                        <outlet property="email" destination="iEy-zs-4Gz" id="IWZ-hQ-wcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjI-l2-a4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

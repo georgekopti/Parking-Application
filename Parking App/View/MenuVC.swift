@@ -40,4 +40,10 @@ class MenuVC: UIViewController {
     }
     
     
+    @IBAction func SignOut() {
+        let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let si = sb.instantiateViewController(withIdentifier: "SignIn") as! SignInVC
+        navigationController?.pushViewController(si, animated: true)
+    }
+    
 }
