@@ -17,6 +17,7 @@
 		AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */; };
 		AE47524123885D8F00DB287C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47524023885D8F00DB287C /* MenuVC.swift */; };
 		AE475243238862A000DB287C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE475242238862A000DB287C /* SearchVC.swift */; };
+		AED8086423A31C2600321FA5 /* AddParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED8086323A31C2600321FA5 /* AddParkingVC.swift */; };
 		F52E6FDC23A2D2DD00533CCE /* UpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E6FDB23A2D2DD00533CCE /* UpdateVC.swift */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
@@ -39,6 +40,7 @@
 		AE1DEB8A23787CE800D49000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE47524023885D8F00DB287C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		AE475242238862A000DB287C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		AED8086323A31C2600321FA5 /* AddParkingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParkingVC.swift; sourceTree = "<group>"; };
 		F52E6FDB23A2D2DD00533CCE /* UpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateVC.swift; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				AE47524023885D8F00DB287C /* MenuVC.swift */,
 				AE475242238862A000DB287C /* SearchVC.swift */,
 				F52E6FDB23A2D2DD00533CCE /* UpdateVC.swift */,
+				AED8086323A31C2600321FA5 /* AddParkingVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */,
 				F5EF4CDF2388445700911436 /* User.swift in Sources */,
 				F5EF4CDB2388315300911436 /* Validator.swift in Sources */,
+				AED8086423A31C2600321FA5 /* AddParkingVC.swift in Sources */,
 				AE1DEB7A23787CE600D49000 /* AppDelegate.swift in Sources */,
 				F5EF4D1223888AF600911436 /* Parking.swift in Sources */,
 				AE1DEB7C23787CE600D49000 /* SceneDelegate.swift in Sources */,
