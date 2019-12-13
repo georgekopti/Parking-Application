@@ -27,10 +27,10 @@ class MenuVC: UIViewController {
     
     @IBAction func onAddParkingClick(){
         
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let addParkingView = storyBoard.instantiateViewController(withIdentifier: "AddParking") as! AddParkingVC
-        addParkingView.user = user
-        navigationController?.pushViewController(addParkingView, animated: true)
+        //let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //let addParkingView = storyBoard.instantiateViewController(withIdentifier: "AddParking") as! AddParkingVC
+        //addParkingView.user = user
+        //navigationController?.pushViewController(addParkingView, animated: true)
         
     }
     
