@@ -11,7 +11,7 @@ import Foundation
 import CoreData
 
 class SignInVC: UIViewController {
-
+//
     var userData = UserData()
     var paymentData = PaymentData()
     

@@ -143,6 +143,41 @@ public class UserData{
         return id
     }
     
+    func updateUser(user : User)->Bool{
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
+            return false
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CustomerInfo")
+        
+        fetchRequest.predicate = NSPredicate(format: "id = \(user.id)")
+        
+        do{
+            let result = try managedContext.fetch(fetchRequest)
+            
+            let existingUser = result[0] as! NSManagedObject
+            
+            existingUser.setValue(user.name, forKey: "name")
+            existingUser.setValue(user.password, forKey: "password")
+            existingUser.setValue(user.email, forKey: "email")
+            existingUser.setValue(user.contactNo, forKey: "contact_no")
+            existingUser.setValue(user.carPlateNo, forKey: "car_plate_no")
+            do{
+                try managedContext.save()
+                print("User update Successful")
+                return true
+            }catch{
+                print("User update unsuccessful")
+                return false
+            }
+        }catch{
+            print("User update unsuccessful")
+            return false
+        }
+    }
+    
 }
 //end of userData
 
@@ -177,9 +212,9 @@ public class PaymentData{
         }
     }
     
-    func updatePayment(payment : PaymentModel){
+    func updatePayment(payment : PaymentModel) -> Bool{
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
-            return
+            return false
         }
         
         let managedContext = appDelegate.persistentContainer.viewContext
@@ -202,11 +237,14 @@ public class PaymentData{
             do{
                 try managedContext.save()
                 print("Payment update Successful")
+                return true
             }catch{
                 print("Payment update unsuccessful")
+                return false
             }
         }catch{
             print("Payment update unsuccessful")
+            return false
         }
         
     }
