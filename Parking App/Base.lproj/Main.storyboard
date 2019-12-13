@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rl2-2O-Ltc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rfr-T2-unv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -43,14 +43,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQW-ol-zqm">
-                                <rect key="frame" x="20" y="796" width="374" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Sign In"/>
-                                <connections>
-                                    <action selector="SignInBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFc-28-MbW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK6-kH-msj">
                                 <rect key="frame" x="340" y="269.5" width="54" height="30"/>
                                 <state key="normal" title="Sign Up"/>
@@ -58,17 +50,32 @@
                                     <segue destination="pbE-Bz-Xkn" kind="show" id="WMq-HI-WGk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDS-YG-qqB">
+                                <rect key="frame" x="20" y="345.5" width="374" height="30"/>
+                                <state key="normal" title="Forgot Password"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQW-ol-zqm">
+                                <rect key="frame" x="20" y="289.5" width="374" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="SignInBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFc-28-MbW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="JQW-ol-zqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0vd-sB-q9f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JQW-ol-zqm" secondAttribute="trailing" constant="20" id="30I-sb-hRk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EdB-sA-JQe" secondAttribute="trailing" constant="20" id="56i-5r-eW1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PK6-kH-msj" secondAttribute="trailing" constant="20" id="C7A-lF-TU9"/>
                             <constraint firstItem="7hn-To-v8h" firstAttribute="centerY" secondItem="jge-1k-OPp" secondAttribute="centerY" id="CSF-69-aXO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JQW-ol-zqm" secondAttribute="bottom" constant="20" id="DQ5-dB-jTR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JQW-ol-zqm" secondAttribute="trailing" constant="20" id="Dha-8b-Omt"/>
-                            <constraint firstItem="JQW-ol-zqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EPF-we-yKu"/>
+                            <constraint firstItem="gDS-YG-qqB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DuI-85-KVI"/>
+                            <constraint firstItem="gDS-YG-qqB" firstAttribute="top" secondItem="JQW-ol-zqm" secondAttribute="bottom" constant="10" id="HAF-6x-nBM"/>
                             <constraint firstItem="EdB-sA-JQe" firstAttribute="top" secondItem="nOE-3g-RzG" secondAttribute="bottom" constant="20" id="LFC-Rg-Q6G"/>
+                            <constraint firstItem="JQW-ol-zqm" firstAttribute="top" secondItem="7hn-To-v8h" secondAttribute="bottom" constant="40" id="QCG-LE-6cD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7hn-To-v8h" secondAttribute="trailing" constant="20" id="QUJ-Cp-RSh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gDS-YG-qqB" secondAttribute="trailing" constant="20" id="SRg-e1-9k7"/>
                             <constraint firstItem="PK6-kH-msj" firstAttribute="top" secondItem="7hn-To-v8h" secondAttribute="bottom" constant="20" id="VbV-T5-4Vk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nOE-3g-RzG" secondAttribute="trailing" constant="20" id="VoY-cK-100"/>
                             <constraint firstItem="EdB-sA-JQe" firstAttribute="leading" secondItem="8zI-7o-64O" secondAttribute="trailing" constant="10" id="WbL-OU-8KK"/>
@@ -461,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sle-9C-zUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3688" y="104"/>
+            <point key="canvasLocation" x="3607" y="90"/>
         </scene>
         <!--Add ParkingVC-->
         <scene sceneID="wK4-Ac-uuL">
