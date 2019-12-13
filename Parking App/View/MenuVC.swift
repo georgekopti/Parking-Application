@@ -41,4 +41,14 @@ class MenuVC: UIViewController {
         navigationController?.pushViewController(si, animated: true)
     }
     
+    @IBAction func onUpdateClick(){
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let updateView = storyBoard.instantiateViewController(withIdentifier: "UpdateProfile") as! UpdateProfileVC
+        updateView.id = user.id
+        navigationController?.pushViewController(updateView, animated: true)
+        
+        
+    }
+    
 }

@@ -172,7 +172,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Updata User Profile"/>
                                 <connections>
-                                    <action selector="Update" destination="7iC-e1-DkT" eventType="touchUpInside" id="pVO-O7-c22"/>
+                                    <action selector="onUpdateClick" destination="7iC-e1-DkT" eventType="touchUpInside" id="Yce-Ye-8OG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utb-wQ-gkS">
