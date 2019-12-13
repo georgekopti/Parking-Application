@@ -14,6 +14,7 @@ class SignInVC: UIViewController {
 //
     var userData = UserData()
     var paymentData = PaymentData()
+    var parkingData = ParkingData()
     
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
@@ -35,6 +36,12 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //let all_parking : [ParkingModel] = parkingData.getAllParking(user_id: 2)!
+        
+        //for parking in all_parking{
+        //    print(parking.parkingDate!)
+       // }
         
         // Do any additional setup after loading the view.
     }

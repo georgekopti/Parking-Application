@@ -374,7 +374,7 @@ public class ParkingData{
     }
     
     
-    func getAllParking() -> [NSManagedObject]?{
+    func getAllParking(user_id: Int) -> [ParkingModel]?{
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
             return nil
         }
@@ -385,12 +385,54 @@ public class ParkingData{
         
         do{
             let result = try managedContext.fetch(fetchRequest)
+            var all_parking = [ParkingModel]()
             
-            return result as? [NSManagedObject]
+            
+            for parking in ((result as? [NSManagedObject])!){
+                
+                if(user_id == (parking.value(forKey: "customer_id") as! Int)){
+                    
+                    var new_parking = ParkingModel();
+                    
+                    new_parking.buildingCode = (parking.value(forKey: "building_code") as! Int)
+                    new_parking.hoursParked = (parking.value(forKey: "hours") as! Int)
+                    new_parking.plateNumber = (parking.value(forKey: "plate_number") as! String)
+                    new_parking.suitNumber = (parking.value(forKey: "suit_number") as! Int)
+                    new_parking.parkingDate = (parking.value(forKey: "parking_date") as! Date)
+                    new_parking.parkingCost = (parking.value(forKey: "parking_cost") as! Int)
+                    new_parking.userId = (parking.value(forKey: "customer_id") as! Int)
+                    
+                    all_parking.append(new_parking)
+                    
+                    
+                }
+                
+                
+            }
+            
+            return all_parking
         }catch{
             print("Data fetching Unsuccessful")
         }
         return nil
+    }
+    
+    func getParkingCout(month: Int, user_id: Int) -> Int{
+        
+        var count: Int = 0
+        let all_parking : [ParkingModel] = getAllParking(user_id: user_id)!
+        
+        for parking in all_parking{
+            
+            let calanderDate = Calendar.current.dateComponents([.month], from: parking.parkingDate)
+            let parking_month: Int = calanderDate.month!
+            
+            if(parking_month == month){
+                count = count + 1
+            }
+        }
+        
+        return count
     }
     
     

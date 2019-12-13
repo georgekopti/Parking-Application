@@ -3,6 +3,8 @@ import UIKit
 
 class MenuVC: UIViewController {
     
+    
+    var parkingData = ParkingData()
     var user : User = User()
     
     
@@ -47,6 +49,19 @@ class MenuVC: UIViewController {
         let updateView = storyBoard.instantiateViewController(withIdentifier: "UpdateProfile") as! UpdateProfileVC
         updateView.id = user.id
         navigationController?.pushViewController(updateView, animated: true)
+        
+    }
+    
+    @IBAction func onViewReceiptClick(){
+        
+        let all_parking : [ParkingModel] = parkingData.getAllParking(user_id: user.id)!
+        let parking : ParkingModel = all_parking.last!
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let singleReceiptView = storyBoard.instantiateViewController(withIdentifier: "SingleReceipt") as! SingleReceiptVC
+        singleReceiptView.parking = parking
+        singleReceiptView.user = user
+        navigationController?.pushViewController(singleReceiptView, animated: true)
         
         
     }

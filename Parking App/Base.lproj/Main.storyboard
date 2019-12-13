@@ -153,6 +153,9 @@
                                 <rect key="frame" x="20" y="163" width="374" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="View Parking Receipt"/>
+                                <connections>
+                                    <action selector="onViewReceiptClick" destination="7iC-e1-DkT" eventType="touchUpInside" id="8IS-14-bwr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prf-lH-p4M">
                                 <rect key="frame" x="20" y="221" width="374" height="38"/>
@@ -620,6 +623,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iQ-BQ-Vtz">
+                                <rect key="frame" x="20" y="411.5" width="374" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Back to menu"/>
+                                <connections>
+                                    <action selector="onBackClick" destination="245-dv-5E0" eventType="touchUpInside" id="hRm-3Y-m52"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -635,10 +646,13 @@
                             <constraint firstItem="MhX-e6-jaE" firstAttribute="trailing" secondItem="ZVH-zF-QAr" secondAttribute="trailing" constant="20" id="Z3R-r6-1vA"/>
                             <constraint firstItem="IT3-8N-vm8" firstAttribute="top" secondItem="MhX-e6-jaE" secondAttribute="top" constant="20" id="ZT7-CL-apM"/>
                             <constraint firstItem="8uh-10-PTK" firstAttribute="leading" secondItem="MhX-e6-jaE" secondAttribute="leading" constant="20" id="ZXp-Vt-roz"/>
+                            <constraint firstItem="9iQ-BQ-Vtz" firstAttribute="top" secondItem="zoD-Cn-wIg" secondAttribute="bottom" constant="20" id="a6Z-ys-t4a"/>
                             <constraint firstItem="sNg-bn-7Gg" firstAttribute="leading" secondItem="MhX-e6-jaE" secondAttribute="leading" constant="20" id="bDB-zT-TPQ"/>
                             <constraint firstItem="516-ot-OYh" firstAttribute="top" secondItem="sNg-bn-7Gg" secondAttribute="bottom" constant="20" id="e47-en-YXK"/>
+                            <constraint firstItem="MhX-e6-jaE" firstAttribute="trailing" secondItem="9iQ-BQ-Vtz" secondAttribute="trailing" constant="20" id="ht8-e5-5rp"/>
                             <constraint firstItem="ZVH-zF-QAr" firstAttribute="leading" secondItem="MhX-e6-jaE" secondAttribute="leading" constant="20" id="inr-GI-vZi"/>
                             <constraint firstItem="MhX-e6-jaE" firstAttribute="trailing" secondItem="zoD-Cn-wIg" secondAttribute="trailing" constant="20" id="k4b-sQ-sxX"/>
+                            <constraint firstItem="9iQ-BQ-Vtz" firstAttribute="leading" secondItem="MhX-e6-jaE" secondAttribute="leading" constant="20" id="nKN-P8-1r2"/>
                             <constraint firstItem="zoD-Cn-wIg" firstAttribute="top" secondItem="516-ot-OYh" secondAttribute="bottom" constant="20" id="paQ-wk-zXV"/>
                             <constraint firstItem="ZVH-zF-QAr" firstAttribute="top" secondItem="8uh-10-PTK" secondAttribute="bottom" constant="20" id="uwx-Xk-E6C"/>
                             <constraint firstItem="MhX-e6-jaE" firstAttribute="trailing" secondItem="sNg-bn-7Gg" secondAttribute="trailing" constant="20" id="v65-8u-5zl"/>
@@ -909,7 +923,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjI-l2-a4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4552.1739130434789" y="522.99107142857144"/>
+            <point key="canvasLocation" x="4357" y="828"/>
         </scene>
     </scenes>
 </document>

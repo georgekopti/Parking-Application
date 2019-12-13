@@ -64,12 +64,21 @@ class AddParkingVC: UIViewController {
                                                       parkingCost: price,
                                                       userId: user.id)
             
+            let calanderDate = Calendar.current.dateComponents([.month], from: date)
+            let month: Int = calanderDate.month!
+            let parkingThisMonth = parkingData.getParkingCout(month: month, user_id: user.id)
+            
+            if(parkingThisMonth < 3){
+                parking.parkingCost = 0
+            }
+            
             parkingData.insertParking(newParking: parking)
             print("Done and Added")
             
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let singleReceiptView = storyBoard.instantiateViewController(withIdentifier: "SingleReceipt") as! SingleReceiptVC
             singleReceiptView.parking = parking
+            singleReceiptView.user = user
             navigationController?.pushViewController(singleReceiptView, animated: true)
             
         }

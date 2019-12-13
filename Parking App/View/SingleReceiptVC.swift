@@ -5,6 +5,9 @@ import UIKit
 class SingleReceiptVC: UIViewController {
     
     var parking : ParkingModel = ParkingModel()
+    var user : User = User()
+    
+    
     
     @IBOutlet var lblCarPlate: UILabel!
     @IBOutlet var lblDate: UILabel!
@@ -21,7 +24,16 @@ class SingleReceiptVC: UIViewController {
         lblDuration.text = "Duration: \(String(parking.hoursParked)) Hours"
         lblBuildingCode.text = "Building Code: \(String(parking.buildingCode))"
         lblSuitNumber.text = "Suit Number: \(String(parking.suitNumber))"
-        lblPrice.text = "Parking Price: \(String(parking.parkingCost))"
+        lblPrice.text = "Parking Price: $\(String(parking.parkingCost))"
+        
+    }
+    
+    @IBAction func onBackClick(){
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let menuView = storyBoard.instantiateViewController(withIdentifier: "Menu") as! MenuVC
+        menuView.user = user
+        navigationController?.pushViewController(menuView, animated: true)
         
     }
     
