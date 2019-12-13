@@ -65,5 +65,10 @@ class MenuVC: UIViewController {
         
         
     }
+    @IBAction func ParkingList() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let updateView = storyBoard.instantiateViewController(withIdentifier: "ListParking") as! ReceiptListVC
+        navigationController?.pushViewController(updateView, animated: true)
+    }
     
 }
