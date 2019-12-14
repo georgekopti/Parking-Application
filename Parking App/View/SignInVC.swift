@@ -18,6 +18,40 @@ class SignInVC: UIViewController {
     
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
+    @IBOutlet var rememberMe: UISwitch!
+    
+    
+    
+    
+    func rememberData(){
+        UserDefaults.standard.set(self.email.text, forKey: "USERNAME")
+        UserDefaults.standard.set(self.password.text, forKey: "PASSWORD")
+    }
+    
+    func getRememberedData(){
+        if let email = UserDefaults.standard.value(forKey: "USERNAME"){
+            self.email.text = email as? String
+        }
+        
+        if let password = UserDefaults.standard.value(forKey: "PASSWORD"){
+            self.password.text = password as? String
+        }
+    }
+    
+    func forgetData(){
+        if let _ = UserDefaults.standard.value(forKey: "USERNAME"){
+            UserDefaults.standard.removeObject(forKey: "USERNAME")
+        }
+        
+        if let _ = UserDefaults.standard.value(forKey: "PASSWORD"){
+            UserDefaults.standard.removeObject(forKey: "PASSWORD")
+        }
+    }
+
+    
+    
+    
+    
     
     @IBAction func SignInBtn() {
         print("check to see if user exists")
@@ -26,6 +60,13 @@ class SignInVC: UIViewController {
         let found = userData.checkUser(cUser: user)
         paymentData.checkPayment();
         print(found)
+        if rememberMe.isOn {
+            //save data from UserDefaults
+            self.rememberData()
+        }else{
+            //remove data from UserDefaults
+            self.forgetData()
+        }
         if(found >= 0){
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let menuView = storyBoard.instantiateViewController(withIdentifier: "Menu") as! MenuVC
@@ -45,6 +86,7 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         self.getRememberedData()
         //let all_parking : [ParkingModel] = parkingData.getAllParking(user_id: 2)!
         
         //for parking in all_parking{
