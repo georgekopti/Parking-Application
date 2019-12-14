@@ -26,21 +26,17 @@ class ForgotPasswordVC: UIViewController {
         
         let email = txtEmail.text!
         
-        var users = userData.getAllUsers()!
+        let users = userData.getAllUsers()!
         
+        var password = "User does not exist"
         for user in users{
             
             if(user.value(forKey: "email") as! String == email){
-                
-                lblPassword.text = "password: \(String(describing: user.value(forKey: "password")))"
-                
+                password = "Password: \(String(describing: user.value(forKey: "password")!))"
             }
-            
         }
         
-        
-        
-        
+        lblPassword.text = password
         
         
     }

@@ -17,10 +17,6 @@
 		AE1DEB8923787CE800D49000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1DEB8723787CE800D49000 /* LaunchScreen.storyboard */; };
 		AE31AA0323A3EB5C00FD2898 /* AddParkingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31AA0123A3EB5C00FD2898 /* AddParkingVC.swift */; };
 		AE31AA0423A3EB5C00FD2898 /* SingleReceiptVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE31AA0223A3EB5C00FD2898 /* SingleReceiptVC.swift */; };
-		AE3A0DB923A42FDB00D8FFD8 /* ParkingManualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A0DB823A42FDB00D8FFD8 /* ParkingManualVC.swift */; };
-		AE3A0DBE23A4432100D8FFD8 /* parkingManual.html in Resources */ = {isa = PBXBuildFile; fileRef = AE3A0DBD23A4432100D8FFD8 /* parkingManual.html */; };
-		AE3A0DC123A443A500D8FFD8 /* CustomerSupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A0DC023A443A500D8FFD8 /* CustomerSupportVC.swift */; };
-		AE3A0DC323A44C9200D8FFD8 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3A0DC223A44C9200D8FFD8 /* ForgotPasswordVC.swift */; };
 		AE47524123885D8F00DB287C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47524023885D8F00DB287C /* MenuVC.swift */; };
 		AE475243238862A000DB287C /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE475242238862A000DB287C /* SearchVC.swift */; };
 		F52E6FDE23A3049700533CCE /* UpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E6FDD23A3049700533CCE /* UpdateProfileVC.swift */; };
@@ -30,6 +26,7 @@
 		F5D3D71923A4533300B6E584 /* CustomerSupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3D71623A4533300B6E584 /* CustomerSupportVC.swift */; };
 		F5D3D71A23A4533300B6E584 /* ParkingManualVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3D71723A4533300B6E584 /* ParkingManualVC.swift */; };
 		F5D3D71C23A4548000B6E584 /* parkingManual.html in Resources */ = {isa = PBXBuildFile; fileRef = F5D3D71B23A4548000B6E584 /* parkingManual.html */; };
+		F5D3D72023A4694200B6E584 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D3D71F23A4694200B6E584 /* ForgotPasswordVC.swift */; };
 		F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CD823848B5A00911436 /* SignInVC.swift */; };
 		F5EF4CDB2388315300911436 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDA2388315300911436 /* Validator.swift */; };
 		F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EF4CDC2388438600911436 /* DataBaseHelper.swift */; };
@@ -51,11 +48,6 @@
 		AE1DEB8A23787CE800D49000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE31AA0123A3EB5C00FD2898 /* AddParkingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkingVC.swift; sourceTree = "<group>"; };
 		AE31AA0223A3EB5C00FD2898 /* SingleReceiptVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleReceiptVC.swift; sourceTree = "<group>"; };
-		AE3A0DB823A42FDB00D8FFD8 /* ParkingManualVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingManualVC.swift; sourceTree = "<group>"; };
-		AE3A0DBD23A4432100D8FFD8 /* parkingManual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = parkingManual.html; path = ../../../Downloads/parkingManual.html; sourceTree = "<group>"; };
-		AE3A0DBF23A4432300D8FFD8 /* parkingManual.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = parkingManual.html; sourceTree = "<group>"; };
-		AE3A0DC023A443A500D8FFD8 /* CustomerSupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupportVC.swift; sourceTree = "<group>"; };
-		AE3A0DC223A44C9200D8FFD8 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		AE47524023885D8F00DB287C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		AE475242238862A000DB287C /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		F52E6FDD23A3049700533CCE /* UpdateProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileVC.swift; sourceTree = "<group>"; };
@@ -65,6 +57,7 @@
 		F5D3D71623A4533300B6E584 /* CustomerSupportVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerSupportVC.swift; sourceTree = "<group>"; };
 		F5D3D71723A4533300B6E584 /* ParkingManualVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkingManualVC.swift; sourceTree = "<group>"; };
 		F5D3D71B23A4548000B6E584 /* parkingManual.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = parkingManual.html; sourceTree = "<group>"; };
+		F5D3D71F23A4694200B6E584 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		F5EF4CD823848B5A00911436 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		F5EF4CDA2388315300911436 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		F5EF4CDC2388438600911436 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
@@ -131,6 +124,7 @@
 		F5A9D08F237F3AAD002B20F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5D3D71F23A4694200B6E584 /* ForgotPasswordVC.swift */,
 				F5D3D71B23A4548000B6E584 /* parkingManual.html */,
 				F5D3D71623A4533300B6E584 /* CustomerSupportVC.swift */,
 				F5D3D71523A4533300B6E584 /* LastReceiptVC.swift */,
@@ -235,10 +229,10 @@
 				AE1DEB8423787CE600D49000 /* Parking_App.xcdatamodeld in Sources */,
 				F5EF4CD923848B5A00911436 /* SignInVC.swift in Sources */,
 				AE1DEB7E23787CE600D49000 /* ViewController.swift in Sources */,
+				F5D3D72023A4694200B6E584 /* ForgotPasswordVC.swift in Sources */,
 				F52E6FE023A41E1B00533CCE /* ReceiptListVC.swift in Sources */,
 				F5EF4D1023888AD200911436 /* Payment.swift in Sources */,
 				F5EF4CDD2388438600911436 /* DataBaseHelper.swift in Sources */,
-				AE3A0DC323A44C9200D8FFD8 /* ForgotPasswordVC.swift in Sources */,
 				AE31AA0423A3EB5C00FD2898 /* SingleReceiptVC.swift in Sources */,
 				F5D3D71823A4533300B6E584 /* LastReceiptVC.swift in Sources */,
 				F5EF4CDF2388445700911436 /* User.swift in Sources */,
