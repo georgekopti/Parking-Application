@@ -19,8 +19,14 @@ class SingleReceiptVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         lblCarPlate.text = "Car Plate: \(String(parking.plateNumber))"
-        lblDate.text = "Date: \(String(describing: parking.parkingDate!))"
+        if(parking.parkingDate != nil){
+            lblDate.text = "Date: \(parking.parkingDate!)"
+        }else{
+            lblDate.text = "Date: "
+        }
+        
         lblDuration.text = "Duration: \(String(parking.hoursParked)) Hours"
         lblBuildingCode.text = "Building Code: \(String(parking.buildingCode))"
         lblSuitNumber.text = "Suit Number: \(String(parking.suitNumber))"

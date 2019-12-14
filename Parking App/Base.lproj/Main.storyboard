@@ -320,14 +320,18 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Building Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFz-kG-b6e">
-                                            <rect key="frame" x="20" y="11" width="107" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFz-kG-b6e">
+                                            <rect key="frame" x="30" y="21" width="354" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="YFz-kG-b6e" secondAttribute="trailing" constant="10" id="NRg-Ef-voy"/>
+                                        <constraint firstItem="YFz-kG-b6e" firstAttribute="leading" secondItem="tTU-T7-9iT" secondAttribute="leadingMargin" constant="10" id="T9l-QZ-YV5"/>
+                                        <constraint firstItem="YFz-kG-b6e" firstAttribute="top" secondItem="tTU-T7-9iT" secondAttribute="topMargin" constant="10" id="eVq-QW-XmO"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="cell"/>
                                 <connections>
@@ -343,7 +347,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lH-Pw-ULN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3626" y="879"/>
+            <point key="canvasLocation" x="3624.6376811594205" y="878.57142857142856"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="CLR-14-VDX">

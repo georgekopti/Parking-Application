@@ -10,11 +10,15 @@ import UIKit
 
 class ReceiptListVC: UITableViewController {
 
+    var user : User = User()
+    var parkings = [ParkingModel]()
+    
+    var parkingData = ParkingData()
+    
     var list : [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        list.append("Gap")
-        list.append("New")
+        parkings = parkingData.getAllParking(user_id: user.id)!
         tableView.reloadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -32,7 +36,7 @@ class ReceiptListVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return list.count
+        return parkings.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,11 +44,22 @@ class ReceiptListVC: UITableViewController {
 
         // Configure the cell...
 
-        print(self.list[indexPath.row])
-        cell.BuildingCode.text = self.list[indexPath.row]
+        print(self.parkings[indexPath.row])
+        cell.BuildingCode.text = "\(parkings[indexPath.row].parkingDate!)"
 
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let mainSB = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = mainSB.instantiateViewController(identifier: "SingleReceipt") as! SingleReceiptVC
+        
+        //send the current contact to next scene
+        newVC.parking = parkings[indexPath.row]
+        newVC.user = user
+        self.navigationController?.pushViewController(newVC, animated: true)
     }
 
 }
