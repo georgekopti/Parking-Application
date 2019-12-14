@@ -34,6 +34,14 @@ class SignInVC: UIViewController {
         }
     }
     
+    @IBAction func onForgotClick(){
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let forgotView = storyBoard.instantiateViewController(withIdentifier: "Forgot") as! ForgotPasswordVC
+        navigationController?.pushViewController(forgotView, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
