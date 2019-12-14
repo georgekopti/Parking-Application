@@ -35,6 +35,7 @@ class UpdateProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pig-1")!)
         let user = userData.returnUser(id: id)
         let payment = paymentData.returnPayment(id: id)
         

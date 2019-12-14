@@ -36,7 +36,7 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pig-1")!)
         // Do any additional setup after loading the view.
     }
     

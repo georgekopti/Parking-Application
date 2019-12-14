@@ -20,6 +20,7 @@ class ReceiptListVC: UITableViewController {
         super.viewDidLoad()
         parkings = parkingData.getAllParking(user_id: user.id)!
         tableView.reloadData()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pig-1")!)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

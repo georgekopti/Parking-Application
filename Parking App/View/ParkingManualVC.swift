@@ -24,7 +24,6 @@ class ParkingManualVC: UIViewController, WKUIDelegate{
         let request = URLRequest(url: url)
         
         self.webView.load(request)
-
         
     }
     

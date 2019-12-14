@@ -19,7 +19,7 @@ class SingleReceiptVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pig-1")!)
         lblCarPlate.text = "Car Plate: \(String(parking.plateNumber))"
         if(parking.parkingDate != nil){
             lblDate.text = "Date: \(parking.parkingDate!)"

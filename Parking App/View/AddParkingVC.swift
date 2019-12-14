@@ -20,7 +20,7 @@ class AddParkingVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pig-1")!)
     }
     
     var numberOfHours : Int = 1

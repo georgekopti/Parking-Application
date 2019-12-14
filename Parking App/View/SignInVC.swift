@@ -93,6 +93,8 @@ class SignInVC: UIViewController {
         //    print(parking.parkingDate!)
        // }
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "pig-1")!)
+        
         // Do any additional setup after loading the view.
     }
     

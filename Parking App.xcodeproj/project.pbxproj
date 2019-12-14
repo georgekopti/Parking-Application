@@ -389,7 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NDJ2GMP7JT;
+				DEVELOPMENT_TEAM = M28C9P5JXU;
 				INFOPLIST_FILE = "Parking App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NDJ2GMP7JT;
+				DEVELOPMENT_TEAM = M28C9P5JXU;
 				INFOPLIST_FILE = "Parking App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
