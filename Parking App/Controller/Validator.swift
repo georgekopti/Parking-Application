@@ -74,5 +74,21 @@ class Validation {
        return isvalidate
     }
     
+    public func validateBuildingCode(buildingCode: String) -> Bool {
+       //needs to be 3 digits
+       let regEx = "[0-9]{2,}"
+       let trimmedString = buildingCode.trimmingCharacters(in: .whitespaces)
+       let validateCVV = NSPredicate(format:"SELF MATCHES %@", regEx)
+       let isvalidate = validateCVV.evaluate(with: trimmedString)
+       return isvalidate
+    }
     
+    public func validateSuit(suit: String) -> Bool {
+       //needs to be 1 or more
+       let regEx = "[0-9]{1,5}"
+       let trimmedString = suit.trimmingCharacters(in: .whitespaces)
+       let validateCVV = NSPredicate(format:"SELF MATCHES %@", regEx)
+       let isvalidate = validateCVV.evaluate(with: trimmedString)
+       return isvalidate
+    }
 }
